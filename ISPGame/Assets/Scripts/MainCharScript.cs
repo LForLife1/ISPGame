@@ -4,76 +4,92 @@ using UnityEngine;
 
 public class MainCharScript : MonoBehaviour
 {
+    /*Movement speeds*/
+    public int walkSpeed = 10;
+    public int runSpeed = 20;
 
-	public float speedDefault = 3.5f;
-	float speed;
-	Rigidbody2D rigidbody2d;
-	float horizontal;
-	float vertical;
+    Animator animator;
+    Rigidbody2D rigidbody2d;
+    Vector2 lookDirection = new Vector2(1, 0);
 
-	public ParticleSystem unusedEffect;
+    public void Start()
+    {
+        animator = GetComponent<Animator>();
+        rigidbody2d = GetComponent<Rigidbody2D>();
+        //Time.timeScale = 0.5f;
+    }
 
-	Animator animator;
-	Vector2 lookDirection = new Vector2(1, 0);
+    public void Update()
+    {
 
-	// Start is called before the first frame update
-	void Start()
-	{
-		animator = GetComponent<Animator>();
-		rigidbody2d = GetComponent<Rigidbody2D>();
-	}
+        Vector2 move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
-	// Update is called once per frame
-	void Update()
-	{
-
-		if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
-		{
-
-			speed = speedDefault;
-			horizontal = Input.GetAxis("Horizontal");
-			vertical = Input.GetAxis("Vertical");
-
-			Vector2 move = new Vector2(horizontal, vertical);
+        if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
+        {
+            lookDirection.Set(move.x, move.y);
+            lookDirection.Normalize();
+        }
 
 
-
-			if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
-			{
-				lookDirection.Set(move.x, move.y);
-				lookDirection.Normalize();
-			}
-
-            animator.SetFloat("MoveX", lookDirection.x);
-            animator.SetFloat("MoveY", lookDirection.y);
-            //animator.SetFloat("Speed", move.magnitude);
+        /*RightMovement*/
+        if (Input.GetKey(KeyCode.RightArrow))
+        {       /*Checks if shift is pressed at the same time then it moves * runSpeed instead of walkSpeed. If not it will move by walkspeed*/
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(Vector3.right * runSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(Vector3.right * walkSpeed * Time.deltaTime);
+            }
 
         }
-        else
+
+        /*Leftmovement*/
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-			speed = 0.0f;
-		}
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(Vector3.left * runSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(Vector3.left * walkSpeed * Time.deltaTime);
+            }
+        }
 
-		//if (Input.GetKeyDown(KeyCode.X))
-		//{
-		//	RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
-		//	if (hit.collider != null)
-		//	{
-		//		NonPlayerCharacter character = hit.collider.GetComponent<NonPlayerCharacter>();
-		//		if (character != null)
-		//		{
-		//			character.DisplayDialog();
-		//		}
-		//	}
-		//}
-	}
+        /*UpMovement*/
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(Vector3.up * runSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(Vector3.up * walkSpeed * Time.deltaTime);
+            }
 
-	void FixedUpdate()
-	{
-		Vector2 position = rigidbody2d.position;
-		position.x = position.x + speed * horizontal * Time.deltaTime;
-		position.y = position.y + speed * vertical * Time.deltaTime;
+        }
 
-		rigidbody2d.MovePosition(position);
-	}
+        /*DownMovement*/
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(Vector3.down * runSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(Vector3.down * walkSpeed * Time.deltaTime);
+            }
+
+        }
+
+        animator.SetFloat("MoveX", lookDirection.x);
+        animator.SetFloat("MoveY", lookDirection.y);
+
+    }
+
+
 }
