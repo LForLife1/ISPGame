@@ -103,7 +103,34 @@ public class MainCharScript : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            inventory.Save();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            inventory.Load();
+        }
+
+
     }
 
+    public InventoryObject inventory;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        var item = collision.GetComponent<Item>();
+        if (item)
+        {
+            inventory.AddItem(item.item, 1);
+            Destroy(collision.gameObject);
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        inventory.Container.Clear();
+    }
 
 }
