@@ -6,7 +6,9 @@ public class InventoryButtonScript : MonoBehaviour
 {
 
     public GameObject inventory;
+    public GameObject questScreen;
     public bool inventoryIsClosed;
+    public bool questScreenIsClosed;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,20 @@ public class InventoryButtonScript : MonoBehaviour
             {
                 inventory.SetActive(false);
                 inventoryIsClosed = true;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (questScreenIsClosed)
+            {
+                questScreen.SetActive(true);
+                questScreenIsClosed = false;
+            }
+            else
+            {
+                questScreen.SetActive(false);
+                questScreenIsClosed = true;
             }
         }
 
