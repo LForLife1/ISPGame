@@ -25,6 +25,7 @@ public class DisplayInventory : MonoBehaviour
     void Update()
     {
         updateDisplay();
+
     }
 	
 	public void createDisplay()
