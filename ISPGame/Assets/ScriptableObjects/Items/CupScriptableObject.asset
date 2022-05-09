@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0643643bae4e1f4aac7d84bfcb3abec, type: 3}
   m_Name: CupScriptableObject
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 4744509726419723646, guid: 43bd2f8b30ba61f49933d055f2755969, type: 3}
   type: 2
   description: An unused cup. The resin glistens when you hold it against the light.
