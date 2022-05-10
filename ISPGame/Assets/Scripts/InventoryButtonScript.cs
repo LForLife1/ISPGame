@@ -13,8 +13,8 @@ public class InventoryButtonScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //inventory = ;
         inventoryIsClosed = false;
+        questScreenIsClosed = false;
     }
 
     // Update is called once per frame

@@ -3720,6 +3720,57 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1 &178946473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 178946475}
+  - component: {fileID: 178946474}
+  m_Layer: 0
+  m_Name: QuestGiver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &178946474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178946473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee380848a9bc7447ab154a58bb77712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+    isActive: 0
+    description: Find all the clues in the dining room and report back to Evil MC
+      Miyuki.
+    dialogReward: You are a baller!
+  mainCharacter: {fileID: 1185450278}
+  questHub: {fileID: 229082098}
+  descriptionText: {fileID: 1136895921}
+--- !u!4 &178946475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178946473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1385.0198, y: 760.56665, z: -28.36016}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &199563184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3793,7 +3844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7107554454472036501, guid: 72ac64e89d4aa944d8293769155b2f2d, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7107554454472036501, guid: 72ac64e89d4aa944d8293769155b2f2d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3833,6 +3884,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ac64e89d4aa944d8293769155b2f2d, type: 3}
+--- !u!1 &229082098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 702614295868027793, guid: 09bdc771f4f294746a9fc879622baec8, type: 3}
+  m_PrefabInstance: {fileID: 733397011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &338849980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7800679137775700564, guid: 238110d6cff0b6d449ad58d1a8dd9a6a, type: 3}
@@ -3998,7 +4054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7107554454472036501, guid: 72ac64e89d4aa944d8293769155b2f2d, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7107554454472036501, guid: 72ac64e89d4aa944d8293769155b2f2d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4418,7 +4474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7107554454472036501, guid: 72ac64e89d4aa944d8293769155b2f2d, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7107554454472036501, guid: 72ac64e89d4aa944d8293769155b2f2d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4551,7 +4607,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 702614295868027793, guid: 09bdc771f4f294746a9fc879622baec8, type: 3}
       propertyPath: m_Name
-      value: Quest
+      value: Quest1
+      objectReference: {fileID: 0}
+    - target: {fileID: 702614295868027793, guid: 09bdc771f4f294746a9fc879622baec8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09bdc771f4f294746a9fc879622baec8, type: 3}
@@ -4721,7 +4781,7 @@ RectTransform:
   - {fileID: 1793075427}
   - {fileID: 2080691135}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4744,6 +4804,17 @@ MonoBehaviour:
   questScreen: {fileID: 2080691134}
   inventoryIsClosed: 0
   questScreenIsClosed: 0
+--- !u!114 &1136895921 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 702614295672973799, guid: 09bdc771f4f294746a9fc879622baec8, type: 3}
+  m_PrefabInstance: {fileID: 733397011}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1185450275
 GameObject:
   m_ObjectHideFlags: 0
@@ -4828,7 +4899,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1185450278
 MonoBehaviour:
@@ -4968,7 +5039,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Spinning, Spinning, Spinning
+  m_text: "Spinning, Spinning, Spinning ... \n\nGET MY STUFF!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5272,7 +5343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7107554454472036501, guid: 72ac64e89d4aa944d8293769155b2f2d, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7107554454472036501, guid: 72ac64e89d4aa944d8293769155b2f2d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5354,7 +5425,7 @@ Transform:
   m_Children:
   - {fileID: 142715105}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2080691134
 GameObject:
@@ -5367,7 +5438,6 @@ GameObject:
   - component: {fileID: 2080691135}
   - component: {fileID: 2080691138}
   - component: {fileID: 2080691137}
-  - component: {fileID: 2080691136}
   m_Layer: 5
   m_Name: QuestScreen
   m_TagString: Untagged
@@ -5395,24 +5465,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 560, y: 362}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &2080691136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080691134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e506d9f02249f0b4baf8bb5171d40b8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 11400000, guid: c17b0c652e9809144bec57ebff6badb2, type: 2}
-  X_SPACE_BETWEEN_ITEM: 140
-  NUMBER_OF_COLUMNS: 4
-  Y_SPACE_BETWEEN_ITEM: 148
-  X_START: -215
-  Y_START: 350
 --- !u!114 &2080691137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5426,23 +5478,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
+  m_Color: {r: 0.043573633, g: 0, b: 0.8301887, a: 0.40392157}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
-  m_FillCenter: 1
+  m_FillCenter: 0
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.3
 --- !u!222 &2080691138
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5524,7 +5576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7107554454472036501, guid: 72ac64e89d4aa944d8293769155b2f2d, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7107554454472036501, guid: 72ac64e89d4aa944d8293769155b2f2d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5572,16 +5624,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3301514231310137267, guid: 238110d6cff0b6d449ad58d1a8dd9a6a, type: 3}
+      propertyPath: charName
+      value: EvilMainMan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301514231310137267, guid: 238110d6cff0b6d449ad58d1a8dd9a6a, type: 3}
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 593106223}
+    - target: {fileID: 3301514231310137267, guid: 238110d6cff0b6d449ad58d1a8dd9a6a, type: 3}
+      propertyPath: questGiver
+      value: 
+      objectReference: {fileID: 178946474}
     - target: {fileID: 7800679137775700560, guid: 238110d6cff0b6d449ad58d1a8dd9a6a, type: 3}
       propertyPath: m_Name
       value: EvilMC
       objectReference: {fileID: 0}
     - target: {fileID: 7800679137775700564, guid: 238110d6cff0b6d449ad58d1a8dd9a6a, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7800679137775700564, guid: 238110d6cff0b6d449ad58d1a8dd9a6a, type: 3}
       propertyPath: m_LocalPosition.x

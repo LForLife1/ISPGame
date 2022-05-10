@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NonPlayerCharacter : MonoBehaviour
 {
+    public string charName;
+    public QuestGiver questGiver;
     public float displayTime = 4.0f;
     public GameObject dialogBox;
     float timerDisplay;
@@ -24,6 +26,11 @@ public class NonPlayerCharacter : MonoBehaviour
                 dialogBox.SetActive(false);
             }
         }
+    }
+
+    public void giveQuest1()
+    {
+        questGiver.OpenQuestWindow();
     }
 
     public void DisplayDialog()
