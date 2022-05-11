@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: 7722cf60e4436b74c8fdc10b47a64f21
+guid: 0394a7ae5e19dbe479739a599b815e42
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -3371655232861406713
-    second: MC Sprite_0
-  - first:
-      213: -6310009857224086943
-    second: MC Sprite_1
-  - first:
-      213: -828537351342775091
-    second: MC Sprite_2
-  - first:
-      213: -6000200399261952470
-    second: MC Sprite_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,12 +41,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 175
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -101,91 +89,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: MC Sprite_0
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 93
-        width: 115
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70a7534fd697531d0800000000000000
-      internalID: -3371655232861406713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC Sprite_1
-      rect:
-        serializedVersion: 2
-        x: 277
-        y: 93
-        width: 115
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16ae1fa77775e68a0800000000000000
-      internalID: -6310009857224086943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC Sprite_2
-      rect:
-        serializedVersion: 2
-        x: 473
-        y: 93
-        width: 115
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc422123ba17084f0800000000000000
-      internalID: -828537351342775091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC Sprite_3
-      rect:
-        serializedVersion: 2
-        x: 665
-        y: 93
-        width: 115
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2695dcf6810bbca0800000000000000
-      internalID: -6000200399261952470
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
