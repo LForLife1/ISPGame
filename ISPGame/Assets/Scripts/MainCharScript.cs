@@ -12,6 +12,8 @@ public class MainCharScript : MonoBehaviour
     Rigidbody2D rigidbody2d;
     Vector2 lookDirection = new Vector2(1, 0);
 
+    public Quest quest;
+
     public void Start()
     {
         animator = GetComponent<Animator>();

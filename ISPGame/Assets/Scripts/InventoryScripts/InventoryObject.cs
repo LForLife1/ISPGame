@@ -75,9 +75,9 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 	[System.Serializable]
 public class InventorySlot
 {
-	public int ID;
+	public int ID { get; } 
 	public ItemObject item;
-	public int amount;
+	public int amount { get; set; }
 	public InventorySlot(int _id, ItemObject _item, int _amount)
 	{
 		ID = _id;
