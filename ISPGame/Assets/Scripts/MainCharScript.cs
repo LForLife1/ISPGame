@@ -102,7 +102,7 @@ public class MainCharScript : MonoBehaviour
                 {
                     character.DisplayDialog();
                 }
-                if (character.charName == "EvilMainMan")
+                if (character.charName == "EvilMainMan" && !character.completedQuest)
                 {
                     character.giveQuest1();
                 }
