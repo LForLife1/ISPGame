@@ -103,5 +103,6 @@ public class NonPlayerCharacter : MonoBehaviour
         currentlyHasQuest = false;
         currentlyHasQuestSprite.SetActive(false);
         completedQuest = true;
+        //questGiver.CompleteQuestRemoveItems();
     }
 }
