@@ -13,11 +13,13 @@ public class MainCharScript : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
 
     public Quest quest;
+    public VectorValue startingPositionMainRoom;
 
     public void Start()
     {
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
+        transform.position = startingPositionMainRoom.initialValue;
         //Time.timeScale = 0.5f;
     }
 
