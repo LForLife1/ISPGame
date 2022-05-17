@@ -6,15 +6,14 @@ public class NonPlayerCharacter : MonoBehaviour
 {
     public string charName;
     public GameObject dialogCanvas;
-    public QuestGiver questGiver;
     public float displayTime;
     float timerDisplay;
 
+    bool hasSaidThing;
     public GameObject unsaidTextSprite;
     public GameObject currentlyHasQuestSprite;
 
-    bool hasSaidThing;
-
+    public QuestGiver questGiver;
     bool currentlyHasQuest;
     public bool completedQuest;
 

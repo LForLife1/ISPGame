@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Quest
+[CreateAssetMenu][System.Serializable]
+public class Quest : ScriptableObject
 {
 
     public bool isActive;
