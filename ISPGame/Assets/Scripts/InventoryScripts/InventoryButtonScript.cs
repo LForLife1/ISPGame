@@ -6,15 +6,20 @@ public class InventoryButtonScript : MonoBehaviour
 {
 
     public GameObject inventory;
-    public GameObject questScreen;
     public bool inventoryIsClosed;
-    public bool questScreenIsClosed;
+
+    public GameObject questScreen;
+    public bool questScreenActive;
+    public float displayTime;
+    float timerDisplay;
 
     // Start is called before the first frame update
     void Start()
     {
         inventoryIsClosed = false;
-        questScreenIsClosed = false;
+        questScreenActive = false;
+        questScreen.SetActive(false);
+        timerDisplay = -1.0f;
     }
 
     // Update is called once per frame
@@ -35,19 +40,21 @@ public class InventoryButtonScript : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && !questScreenActive)
         {
-            if (questScreenIsClosed)
-            {
-                questScreen.SetActive(true);
-                questScreenIsClosed = false;
-            }
-            else
-            {
-                questScreen.SetActive(false);
-                questScreenIsClosed = true;
-            }
+            questScreenActive = true;
+            questScreen.SetActive(true);
+            timerDisplay = displayTime;
         }
 
+        if (timerDisplay >= 0)
+        {
+            timerDisplay -= Time.deltaTime;
+            if (timerDisplay < 0)
+            {
+                questScreenActive = false;
+                questScreen.SetActive(false);
+            }
+        }
     }
 }
