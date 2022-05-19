@@ -11,6 +11,7 @@ public class RoomTransfer : MonoBehaviour
     public Vector2 cameraChange;
     public Vector3 playerChange;
     public VectorValue playerStorage;
+
     public GameObject fadeInPanel;
     public GameObject fadeOutPanel;
     public float fadeWait;
