@@ -13,12 +13,15 @@ public class InventoryButtonScript : MonoBehaviour
     public float displayTime;
     float timerDisplay;
 
+    public GameObject dialogBox;
+
     // Start is called before the first frame update
     void Start()
     {
         inventoryIsClosed = false;
         questScreenActive = false;
         questScreen.SetActive(false);
+        dialogBox.SetActive(false);
         timerDisplay = -1.0f;
     }
 

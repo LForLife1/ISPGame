@@ -11700,8 +11700,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6380d5375bc917f4aa2d44f8617fab3d, type: 2}
+  m_sharedMaterial: {fileID: 7327278413522319121, guid: 6380d5375bc917f4aa2d44f8617fab3d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11725,8 +11725,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 90
+  m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11896,6 +11896,7 @@ MonoBehaviour:
   questScreen: {fileID: 2080691134}
   questScreenActive: 0
   displayTime: 2
+  dialogBox: {fileID: 1914627926}
 --- !u!1001 &1097402988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13765,7 +13766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1914627927
 RectTransform:
   m_ObjectHideFlags: 0
