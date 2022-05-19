@@ -4512,7 +4512,7 @@ GameObject:
   - component: {fileID: 551367893}
   - component: {fileID: 551367892}
   m_Layer: 0
-  m_Name: BackgroundMusic
+  m_Name: GameBGM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
