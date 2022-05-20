@@ -6,6 +6,8 @@ using TMPro;
 public class Sign : MonoBehaviour
 {
 
+    public SignalSender contextOn;
+    public SignalSender contextOff;
     public GameObject dialogBox;
     public TMP_Text dialogText;
     public string dialog;
@@ -38,6 +40,7 @@ public class Sign : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
+            contextOn.Raise();
         }
     }
 
@@ -47,6 +50,7 @@ public class Sign : MonoBehaviour
         {
             playerInRange = false;
             dialogBox.SetActive(false);
+            contextOff.Raise();
         }
     }
 }

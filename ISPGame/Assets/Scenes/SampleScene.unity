@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &105931286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4723884466791341548, guid: b3bd5a168142a6247afdd9c560c8fc80, type: 3}
+  m_PrefabInstance: {fileID: 7758979775996681279}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &142715104
 GameObject:
   m_ObjectHideFlags: 0
@@ -11913,9 +11918,17 @@ PrefabInstance:
       value: A desk. It sits above a desk with some dust on the underside.
       objectReference: {fileID: 0}
     - target: {fileID: 3299855954532469531, guid: 224adf955a34bb046bd52bd19da8a813, type: 3}
+      propertyPath: contextOn
+      value: 
+      objectReference: {fileID: 11400000, guid: d3c624a6211a3d74ca08cf1a0f9d006a, type: 2}
+    - target: {fileID: 3299855954532469531, guid: 224adf955a34bb046bd52bd19da8a813, type: 3}
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 1914627926}
+    - target: {fileID: 3299855954532469531, guid: 224adf955a34bb046bd52bd19da8a813, type: 3}
+      propertyPath: contextOff
+      value: 
+      objectReference: {fileID: 11400000, guid: f0d88201bbad3e243bd00adbe9b26b44, type: 2}
     - target: {fileID: 3299855954532469531, guid: 224adf955a34bb046bd52bd19da8a813, type: 3}
       propertyPath: dialogText
       value: 
@@ -14274,9 +14287,17 @@ PrefabInstance:
       value: DeskTriggerCollider
       objectReference: {fileID: 0}
     - target: {fileID: 3299855954532469531, guid: 224adf955a34bb046bd52bd19da8a813, type: 3}
+      propertyPath: contextOn
+      value: 
+      objectReference: {fileID: 11400000, guid: d3c624a6211a3d74ca08cf1a0f9d006a, type: 2}
+    - target: {fileID: 3299855954532469531, guid: 224adf955a34bb046bd52bd19da8a813, type: 3}
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 1914627926}
+    - target: {fileID: 3299855954532469531, guid: 224adf955a34bb046bd52bd19da8a813, type: 3}
+      propertyPath: contextOff
+      value: 
+      objectReference: {fileID: 11400000, guid: f0d88201bbad3e243bd00adbe9b26b44, type: 2}
     - target: {fileID: 3299855954532469531, guid: 224adf955a34bb046bd52bd19da8a813, type: 3}
       propertyPath: dialogText
       value: 
@@ -14537,6 +14558,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4723884466791341548, guid: b3bd5a168142a6247afdd9c560c8fc80, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933438118065144022, guid: b3bd5a168142a6247afdd9c560c8fc80, type: 3}
+      propertyPath: contextClue
+      value: 
+      objectReference: {fileID: 105931286}
     - target: {fileID: 7758979774811231514, guid: b3bd5a168142a6247afdd9c560c8fc80, type: 3}
       propertyPath: m_RootOrder
       value: 5
