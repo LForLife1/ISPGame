@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Sign : MonoBehaviour
@@ -10,6 +11,7 @@ public class Sign : MonoBehaviour
     public SignalSender contextOff;
     public GameObject dialogBox;
     public TMP_Text dialogText;
+    public Sprite dialogImageSpriteHead;
     public string dialog;
     public bool playerInRange;
 
@@ -31,6 +33,7 @@ public class Sign : MonoBehaviour
             {
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
+                dialogBox.transform.GetChild(2).gameObject.GetComponent<Image>().sprite = dialogImageSpriteHead; ;
             }
         }
     }
