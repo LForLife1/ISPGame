@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class RoomTransfer : MonoBehaviour
 {
-
-    public string sceneToLoad;
     public Vector2 playerPosition;
-    public Vector2 cameraChange;
+    public Vector2 cameraChangeMaxBounds;
+    public Vector2 cameraChangeMinBounds;
     public Vector3 playerChange;
     public VectorValue playerStorage;
 
@@ -37,8 +36,10 @@ public class RoomTransfer : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            cam.minPosition += cameraChange;
-            cam.maxPosition += cameraChange;
+            cam.minPosition.x = cameraChangeMinBounds.x;
+            cam.minPosition.y = cameraChangeMinBounds.y;
+            cam.maxPosition.x = cameraChangeMaxBounds.x;
+            cam.maxPosition.y = cameraChangeMaxBounds.y;
             other.transform.position += playerChange;
         }
     }

@@ -20,6 +20,7 @@ public class MainCharScript : MonoBehaviour
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
         transform.position = startingPositionMainRoom.initialValue;
+        this.transform.GetChild(0).gameObject.SetActive(false);
         //Time.timeScale = 0.5f;
     }
 
