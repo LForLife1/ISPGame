@@ -18,6 +18,7 @@ public class UICanvasManager : MonoBehaviour
     void Start()
     {
         InventoryPanel.SetActive(false);
+        InventoryPanel.GetComponent<InventoryManager>().resetInventory();
         inventoryPanelState = false;
         QuestScreen.SetActive(false);
         timerDisplay = -1.0f;

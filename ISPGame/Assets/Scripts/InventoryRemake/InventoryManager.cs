@@ -11,6 +11,14 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject blankInventorySlot;
     [SerializeField] private GameObject inventoryPanel;
     [SerializeField] private TextMeshProUGUI descriptionText;
+    public InventoryItem currentItem;
+
+    void OnEnable()
+    {
+        ClearInventorySlots();
+        MakeInventorySlots();
+        SetText("");
+    }
 
     public void SetText(string description)
     {
@@ -23,28 +31,53 @@ public class InventoryManager : MonoBehaviour
         {
             for(int i = 0; i < playerInventory.myInventory.Count; i++)
             {
-                GameObject temp = Instantiate(blankInventorySlot, inventoryPanel.transform.position, Quaternion.identity);
-                temp.transform.SetParent(inventoryPanel.transform);
-
-                InventorySlot newSlot = temp.GetComponent<InventorySlot>();
-                if (newSlot)
+                if(playerInventory.myInventory[i].numberHeld > 0)
                 {
-                    newSlot.Setup(playerInventory.myInventory[i], this);
+                    GameObject temp = Instantiate(blankInventorySlot, inventoryPanel.transform.position, Quaternion.identity);
+                    temp.transform.SetParent(inventoryPanel.transform);
 
+                    InventorySlot newSlot = temp.GetComponent<InventorySlot>();
+                    if (newSlot)
+                    {
+                        newSlot.Setup(playerInventory.myInventory[i], this);
+
+                    }
                 }
             }
         }
     }
-    // Start is called before the first frame update
-    void Start()
+
+    public void SetupDescription(string newDescription, InventoryItem newItem)
     {
-        MakeInventorySlots();
-        SetText("");
+        currentItem = newItem;
+        descriptionText.text = newDescription;
     }
 
-    // Update is called once per frame
-    void Update()
+    void ClearInventorySlots()
     {
-        
+        for(int i = 0; i < inventoryPanel.transform.childCount; i++)
+        {
+            Destroy(inventoryPanel.transform.GetChild(i).gameObject);
+        }
+    }
+
+    public void interactButtonPressed()
+    {
+        if (currentItem)
+        {
+            currentItem.Use();
+            ClearInventorySlots();
+            MakeInventorySlots();
+        }
+    }
+
+    public void resetInventory()
+    {
+        for (int i = 0; i < playerInventory.myInventory.Count; i++)
+        {
+            playerInventory.myInventory[i].numberHeld = 0;
+        }
+
+        playerInventory.myInventory.Clear();
     }
 }

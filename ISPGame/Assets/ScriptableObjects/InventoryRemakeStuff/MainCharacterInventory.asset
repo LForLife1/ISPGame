@@ -13,10 +13,5 @@ MonoBehaviour:
   m_Name: MainCharacterInventory
   m_EditorClassIdentifier: 
   myInventory:
-  - {fileID: 11400000, guid: 77436641f0925cc499c28ee78b55d417, type: 2}
-  - {fileID: 11400000, guid: 77436641f0925cc499c28ee78b55d417, type: 2}
-  - {fileID: 11400000, guid: 77436641f0925cc499c28ee78b55d417, type: 2}
-  - {fileID: 11400000, guid: 77436641f0925cc499c28ee78b55d417, type: 2}
-  - {fileID: 11400000, guid: 77436641f0925cc499c28ee78b55d417, type: 2}
   - {fileID: 11400000, guid: 98f5d2d3cc3272d42a014397c707acbd, type: 2}
   - {fileID: 11400000, guid: 77436641f0925cc499c28ee78b55d417, type: 2}
