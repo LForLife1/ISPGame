@@ -112,17 +112,6 @@ public class MainCharScript : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            inventory.Save();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            inventory.Load();
-        }
-
-
     }
 
     public InventoryObject inventory;

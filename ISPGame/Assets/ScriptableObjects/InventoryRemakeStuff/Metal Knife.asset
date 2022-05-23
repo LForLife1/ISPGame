@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f501c02ced8a484dbd0c3609ce4f441, type: 3}
+  m_Name: Metal Knife
+  m_EditorClassIdentifier: 
+  itemName: Metal Knife
+  itemDescription: 'A metal knife stolen from the Refectory. Bent from years of student
+    misuse, but still dangerous. '
+  itemImage: {fileID: 21300000, guid: 0cbe690d45137444fa9836b5bdaade98, type: 3}
+  numberHeld: 1
+  usable: 0
+  unique: 1

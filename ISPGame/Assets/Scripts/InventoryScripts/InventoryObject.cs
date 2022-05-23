@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEditor;
-using System.Runtime.Serialization;
 
 	[CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
 public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
@@ -35,26 +35,6 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 		}
 		
 		Container.Add(new InventorySlot(database.GetId[_item], _item, _amount));
-	}
-	
-	public void Save()
-	{
-		string saveData = JsonUtility.ToJson(this, true);
-		BinaryFormatter bf = new BinaryFormatter();
-		FileStream file = File.Create(Application.persistentDataPath + savePath);
-		bf.Serialize(file, saveData);
-		file.Close();
-	}
-	
-	public void Load()
-	{
-		if(File.Exists(Application.persistentDataPath + savePath))
-		{
-			BinaryFormatter bf = new BinaryFormatter();
-			FileStream file = File.Open((Application.persistentDataPath + savePath), FileMode.Open);
-			JsonUtility.FromJsonOverwrite(bf.Deserialize(file).ToString(), this);
-			file.Close();
-		}
 	}
 	
 	public void OnAfterDeserialize()
