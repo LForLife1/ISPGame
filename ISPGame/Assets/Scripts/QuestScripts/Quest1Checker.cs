@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Quest1Checker : MonoBehaviour
 {
-
-    public InventoryObject inventory;
+    //NEED AN INVENTORYREFERENCE
     public QuestGiver questGiver;
     QuestGoal questGoal;
 
@@ -18,15 +17,8 @@ public class Quest1Checker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int i = 0; i < inventory.Container.Count; i++)
-        {
-            if (inventory.Container[i].ID == 0 && currentAmount != inventory.Container[i].amount)
-            {
-                questGoal.currentAmount = inventory.Container[i].amount;
-                currentAmount = inventory.Container[i].amount;
+        //UPDATE CURRENT AMOUNT TO AMOUNT IN INVENTORY
 
-            }
-        }
     }
 
 }
