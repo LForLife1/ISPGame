@@ -5,6 +5,8 @@ using UnityEngine;
 public class UICanvasManager : MonoBehaviour
 {
     public GameObject InventoryPanel;
+    bool inventoryPanelState;
+
     public GameObject NotificationScreen;
 
     public GameObject QuestScreen;
@@ -15,6 +17,8 @@ public class UICanvasManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        InventoryPanel.SetActive(false);
+        inventoryPanelState = false;
         QuestScreen.SetActive(false);
         timerDisplay = -1.0f;
     }
@@ -33,11 +37,17 @@ public class UICanvasManager : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.Q) && !questScreenIsActive)
+        if (Input.GetKeyDown(KeyCode.Q) && !questScreenIsActive)
         {
             QuestScreen.SetActive(true);
             questScreenIsActive = true;
             timerDisplay = displayTime;
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            inventoryPanelState = !inventoryPanelState;
+            InventoryPanel.SetActive(inventoryPanelState);
         }
     }
 }

@@ -26240,6 +26240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a26575520b20cbc47ad68333b968620b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 11400000, guid: e10bcb693649af74dabe18386258e7dd, type: 2}
   blankInventorySlot: {fileID: 1963550692003467933, guid: d19def9cc0a925c4d90286c9cf33c8cf, type: 3}
   inventoryPanel: {fileID: 120622662}
   descriptionText: {fileID: 211223534}

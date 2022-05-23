@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 432
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6380d5375bc917f4aa2d44f8617fab3d, type: 2}
   m_sharedMaterial: {fileID: 7327278413522319121, guid: 6380d5375bc917f4aa2d44f8617fab3d, type: 2}
@@ -167,8 +167,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 1963550692003467934}
   - component: {fileID: 1963550692003467928}
   - component: {fileID: 1963550692003467935}
+  - component: {fileID: 4536874013381842427}
   m_Layer: 5
   m_Name: InventorySlot
   m_TagString: Untagged
@@ -286,3 +287,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 0.15
+--- !u!114 &4536874013381842427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963550692003467933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45cbcea37f4c2f4a9f8508fa96d0dc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNumberText: {fileID: 1963550691276691110}
+  itemImage: {fileID: 1963550690566181968}
+  thisItem: {fileID: 0}
+  thisManager: {fileID: 0}
