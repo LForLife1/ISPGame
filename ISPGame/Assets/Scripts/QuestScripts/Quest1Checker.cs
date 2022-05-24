@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class Quest1Checker : MonoBehaviour
 {
-    //NEED AN INVENTORYREFERENCE
+    [SerializeField] InventoryItem inventoryItem;
     public QuestGiver questGiver;
-    QuestGoal questGoal;
 
-    int currentAmount;
-
-    void Start()
-    {
-        questGoal = questGiver.quest.questGoal;
-    }
     // Update is called once per frame
     void Update()
     {
-        //UPDATE CURRENT AMOUNT TO AMOUNT IN INVENTORY
+        if(inventoryItem.numberHeld != questGiver.quest.questGoal.currentAmount)
+        {
+            questGiver.quest.questGoal.currentAmount = inventoryItem.numberHeld;
+        }
+
+        if (questGiver.quest.questGoal.IsReached())
+        {
+            questGiver.quest.Complete();
+            questGiver.OnQuestCompleteShowCheck();
+            questGiver.questCompleted = true;
+            inventoryItem.numberHeld = 0;
+        }
 
     }
 

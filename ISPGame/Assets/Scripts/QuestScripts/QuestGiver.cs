@@ -7,6 +7,7 @@ using TMPro;
 public class QuestGiver : MonoBehaviour
 {
     public Quest quest;
+    public bool questCompleted;
     public MainCharScript mainCharacter;
 
     public GameObject questHub;
@@ -18,6 +19,7 @@ public class QuestGiver : MonoBehaviour
     public void Start()
     {
         questHub.SetActive(false);
+        questCompleted = false;
     }
 
     public void OpenQuestWindow()
@@ -36,18 +38,4 @@ public class QuestGiver : MonoBehaviour
     {
         questHub.transform.Find("CompletionImage").gameObject.SetActive(true);
     }
-
-    //public void CompleteQuestRemoveItems(InventoryObject inventory, ItemObject _item, int itemID, int amount_)
-    //{
-    //    for (int i = 0; i < inventory.Container.Count; i++)
-    //    {
-    //        if (inventory.Container[i].ID == itemID)
-    //        {
-    //            inventory.AddItem(_item, -amount_);
-    //            break;
-
-    //        }
-    //    }
-    //}
-
 }

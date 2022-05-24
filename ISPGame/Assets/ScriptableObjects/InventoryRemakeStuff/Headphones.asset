@@ -16,6 +16,9 @@ MonoBehaviour:
   itemDescription: A pair of headphones. Practically brand new. Someone is definitely
     looking for these.
   itemImage: {fileID: 21300000, guid: 50b67aa60ece08045ac6416378bd1aab, type: 3}
-  numberHeld: 1
+  numberHeld: 0
   usable: 1
   unique: 1
+  thisEvent:
+    m_PersistentCalls:
+      m_Calls: []

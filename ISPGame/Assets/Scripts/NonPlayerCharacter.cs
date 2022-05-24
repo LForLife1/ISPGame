@@ -25,6 +25,8 @@ public class NonPlayerCharacter : MonoBehaviour
         hasSaidThing = false;
         unsaidTextSprite.SetActive(true);
 
+        completedQuest = false;
+
         clearCanvas();
         dialogCanvas.SetActive(false);
         timerDisplay = -1.0f;
@@ -32,9 +34,6 @@ public class NonPlayerCharacter : MonoBehaviour
 
     void Update()
     {
-
-        currentlyHasQuest = questGiver.quest.isActive;
-
         if (timerDisplay >= 0)
         {
             timerDisplay -= Time.deltaTime;
@@ -44,13 +43,11 @@ public class NonPlayerCharacter : MonoBehaviour
             }
         }
 
-        if(currentlyHasQuest && questGiver.quest.questGoal.IsReached())
+        if (questGiver.questCompleted && !completedQuest)
         {
-            questGiver.quest.Complete();
-            questGiver.OnQuestCompleteShowCheck();
-            completeQuest1();
+            completeQuestNPCActivities();
+            completedQuest = true;
         }
-
     }
 
     public void DisplayDialog()
@@ -97,11 +94,9 @@ public class NonPlayerCharacter : MonoBehaviour
         dialogCanvas.transform.Find("PostQuestText").gameObject.SetActive(false);
     }
 
-    void completeQuest1()
+    void completeQuestNPCActivities()
     {
         currentlyHasQuest = false;
         currentlyHasQuestSprite.SetActive(false);
-        completedQuest = true;
-        //questGiver.CompleteQuestRemoveItems();
     }
 }

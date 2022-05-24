@@ -5,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu][System.Serializable]
 public class Quest : ScriptableObject
 {
-
     public bool isActive;
 
     public string title;

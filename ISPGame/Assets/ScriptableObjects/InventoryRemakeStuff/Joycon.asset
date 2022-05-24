@@ -16,7 +16,7 @@ MonoBehaviour:
   itemDescription: The right Joy-Con to a Nintendo Switch. Damaged from student abuse.
     Somebody is definitely looking for this.
   itemImage: {fileID: 21300000, guid: c8d6f46640b8db146874abf256951e0f, type: 3}
-  numberHeld: 1
+  numberHeld: 0
   usable: 0
   unique: 1
   thisEvent:
