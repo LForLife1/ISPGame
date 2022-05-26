@@ -163,6 +163,7 @@ Transform:
   - {fileID: 1097402989}
   - {fileID: 1364150187}
   - {fileID: 276750875}
+  - {fileID: 1728524436}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15439,6 +15440,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &581930571
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 106204352}
+    m_Modifications:
+    - target: {fileID: 8201218924739852794, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 1914627926}
+    - target: {fileID: 8201218924739852794, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: dialogText
+      value: 
+      objectReference: {fileID: 1078658703}
+    - target: {fileID: 8201218924739852795, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_Name
+      value: DeskWithCup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852797, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_Size.x
+      value: 2.2622538
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852797, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9350033
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852797, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.6311269
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201218924739852797, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.11103153
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8201218924739852794, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
 --- !u!1 &593106223
 GameObject:
   m_ObjectHideFlags: 0
@@ -42822,6 +42905,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1728524435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8201218924739852795, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+  m_PrefabInstance: {fileID: 581930571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1728524436 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
+  m_PrefabInstance: {fileID: 581930571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1728524437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728524435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da6c15be55167b4f8b60ae44a34c540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextOn: {fileID: 11400000, guid: d3c624a6211a3d74ca08cf1a0f9d006a, type: 2}
+  contextOff: {fileID: 11400000, guid: f0d88201bbad3e243bd00adbe9b26b44, type: 2}
+  audioPlay: {fileID: 11400000, guid: f62fd6493ed1ddf45b897a7be900aaed, type: 2}
+  dialogBox: {fileID: 1914627926}
+  dialogText: {fileID: 1078658703}
+  dialogImageSpriteHead: {fileID: 21300000, guid: 245e19b3d03b8bd408242c2ba4cd01d9, type: 3}
+  numDialogToUse: 2
+  dialog: There is a cup inside this desk! I'll pick it up.
+  dialog2: There's nothing inside this desk anymore.
+  dialog3: 
+  playerInRange: 0
+  playerInventory: {fileID: 11400000, guid: e10bcb693649af74dabe18386258e7dd, type: 2}
+  inventoryItem: {fileID: 11400000, guid: 77436641f0925cc499c28ee78b55d417, type: 2}
 --- !u!1 &1766056229
 GameObject:
   m_ObjectHideFlags: 0
