@@ -13,7 +13,11 @@ public class Sign : MonoBehaviour
     public GameObject dialogBox;
     public TMP_Text dialogText;
     public Sprite dialogImageSpriteHead;
+
+    public int numDialogToUse;
     public string dialog;
+    public string dialog2;
+    public string dialog3;
     public bool playerInRange;
 
     // Start is called before the first frame update
@@ -33,7 +37,7 @@ public class Sign : MonoBehaviour
             }else
             {
                 dialogBox.SetActive(true);
-                dialogText.text = dialog;
+                dialogText.text = chooseRandomDialogue();
                 dialogBox.transform.GetChild(2).gameObject.GetComponent<Image>().sprite = dialogImageSpriteHead;
                 audioPlay.Raise();
             }
@@ -56,6 +60,22 @@ public class Sign : MonoBehaviour
             playerInRange = false;
             dialogBox.SetActive(false);
             contextOff.Raise();
+        }
+    }
+
+    string chooseRandomDialogue()
+    {
+        int dialogToSay = Random.Range(1, numDialogToUse + 1);
+        if(dialogToSay == 1)
+        {
+            return dialog;
+        }else if(dialogToSay == 2)
+        {
+            return dialog2;
+        }
+        else
+        {
+            return dialog3;
         }
     }
 }

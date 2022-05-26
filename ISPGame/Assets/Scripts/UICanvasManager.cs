@@ -6,6 +6,7 @@ public class UICanvasManager : MonoBehaviour
 {
     public GameObject InventoryPanel;
     bool inventoryPanelState;
+    public SignalSender canMoveSignal;
 
     public GameObject NotificationScreen;
 
@@ -13,6 +14,8 @@ public class UICanvasManager : MonoBehaviour
     bool questScreenIsActive;
     public float displayTime;
     float timerDisplay;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +52,7 @@ public class UICanvasManager : MonoBehaviour
         {
             inventoryPanelState = !inventoryPanelState;
             InventoryPanel.SetActive(inventoryPanelState);
+            canMoveSignal.Raise();
         }
     }
 }

@@ -14728,6 +14728,7 @@ GameObject:
   - component: {fileID: 387634742}
   - component: {fileID: 387634741}
   - component: {fileID: 387634740}
+  - component: {fileID: 387634743}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -14750,10 +14751,10 @@ RectTransform:
   m_Father: {fileID: 1855876309}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 50}
-  m_SizeDelta: {x: 1370, y: 450}
+  m_SizeDelta: {x: 1370, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &387634740
 MonoBehaviour:
@@ -14823,6 +14824,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387634738}
   m_CullTransparentMesh: 1
+--- !u!114 &387634743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387634738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 1
+  m_AspectRatio: 3.0444446
 --- !u!1001 &455179513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14832,8 +14847,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1091588750758466178, guid: 1d76ce26c8637484f9bfd4b70bb39aa3, type: 3}
       propertyPath: dialog
-      value: Drosophila!
+      value: The next student who walks in here with an untucked shirt will be counting
+        drosophilia until sundown!
       objectReference: {fileID: 0}
+    - target: {fileID: 1091588750758466178, guid: 1d76ce26c8637484f9bfd4b70bb39aa3, type: 3}
+      propertyPath: dialog2
+      value: Playing the trumpet is a lot harder than it seems. Or at least how easy
+        I make it seem.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091588750758466178, guid: 1d76ce26c8637484f9bfd4b70bb39aa3, type: 3}
+      propertyPath: dialog3
+      value: The more we learn, the more we know how little we know ... I'm just
+        happy I don't know what Chef K puts in the pasta here!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091588750758466178, guid: 1d76ce26c8637484f9bfd4b70bb39aa3, type: 3}
+      propertyPath: audioPlay
+      value: 
+      objectReference: {fileID: 11400000, guid: f62fd6493ed1ddf45b897a7be900aaed, type: 2}
     - target: {fileID: 1091588750758466178, guid: 1d76ce26c8637484f9bfd4b70bb39aa3, type: 3}
       propertyPath: dialogBox
       value: 
@@ -14842,6 +14872,10 @@ PrefabInstance:
       propertyPath: dialogText
       value: 
       objectReference: {fileID: 1078658703}
+    - target: {fileID: 1091588750758466178, guid: 1d76ce26c8637484f9bfd4b70bb39aa3, type: 3}
+      propertyPath: numDialogToUse
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1091588750758466178, guid: 1d76ce26c8637484f9bfd4b70bb39aa3, type: 3}
       propertyPath: dialogImageSpriteHead
       value: 
@@ -29076,6 +29110,7 @@ GameObject:
   - component: {fileID: 940611663}
   - component: {fileID: 940611665}
   - component: {fileID: 940611664}
+  - component: {fileID: 940611666}
   m_Layer: 5
   m_Name: InventoryBackground
   m_TagString: Untagged
@@ -29101,7 +29136,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1200, y: 250}
+  m_SizeDelta: {x: 1200, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &940611664
 MonoBehaviour:
@@ -29125,7 +29160,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: a98be175279277346ac57ed60bef7294, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -29141,6 +29176,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940611662}
   m_CullTransparentMesh: 1
+--- !u!114 &940611666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940611662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 1
+  m_AspectRatio: 4.8
 --- !u!1 &942559067 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7758979774811231516, guid: b3bd5a168142a6247afdd9c560c8fc80, type: 3}
@@ -29242,6 +29291,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &942559069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942559067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04aa4a8536c4e624d951a36e8f4b817c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signal: {fileID: 11400000, guid: 0e86b177afebb9145873b627b35202f0, type: 2}
+  signalEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1185450278}
+        m_TargetAssemblyTypeName: MainCharScript, Assembly-CSharp
+        m_MethodName: changeMoveStatus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &942559075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29346,7 +29423,13 @@ MonoBehaviour:
   dialogBox: {fileID: 1914627926}
   dialogText: {fileID: 1078658703}
   dialogImageSpriteHead: {fileID: 21300000, guid: cceb37de9817c05439fa98476c5529c2, type: 3}
-  dialog: Strong unions are the cornerstone of the economy! Viva la Clinton!
+  numDialogToUse: 3
+  dialog: Strong unions are the cornerstone of the economy! Bernie was the way to
+    go! LIBERALISM! YEA!
+  dialog2: Do you know of any fine gentlemen in your class with a lovely aunt by
+    the name of Susan? I'm looking for someone to have a nice cup of tea with.
+  dialog3: If that kid asks me to slow down in class one more time, I am going to
+    RIP MY HEAD OFF! JUST PAY ATTENTION! EVERY BIG BOY SHOULD KNOW THIS!
   playerInRange: 0
 --- !u!1 &991425014
 GameObject:
@@ -29769,10 +29852,10 @@ RectTransform:
   m_Father: {fileID: 1855876309}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -320}
-  m_SizeDelta: {x: 1370, y: 200}
+  m_SizeDelta: {x: -230, y: -760}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073511757
 MonoBehaviour:
@@ -30065,6 +30148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InventoryPanel: {fileID: 1855876308}
+  canMoveSignal: {fileID: 11400000, guid: 0e86b177afebb9145873b627b35202f0, type: 2}
   NotificationScreen: {fileID: 1861652013}
   QuestScreen: {fileID: 2080691134}
   displayTime: 2
@@ -44062,7 +44146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850450293}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.86, y: 18.59, z: 0}
+  m_LocalPosition: {x: -23.25, y: 20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -44106,6 +44190,7 @@ GameObject:
   - component: {fileID: 1855876311}
   - component: {fileID: 1855876310}
   - component: {fileID: 1855876312}
+  - component: {fileID: 1855876313}
   m_Layer: 5
   m_Name: InventoryRemakePanel
   m_TagString: Untagged
@@ -44130,10 +44215,10 @@ RectTransform:
   m_Father: {fileID: 1094611456}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1600, y: -960}
+  m_SizeDelta: {x: -960, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1855876310
 MonoBehaviour:
@@ -44190,6 +44275,20 @@ MonoBehaviour:
   inventoryPanel: {fileID: 120622662}
   descriptionText: {fileID: 211223534}
   currentItem: {fileID: 0}
+--- !u!114 &1855876313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855876308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 1
+  m_AspectRatio: 1.6666666
 --- !u!1 &1861652013
 GameObject:
   m_ObjectHideFlags: 0
