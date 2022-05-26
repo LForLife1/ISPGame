@@ -77,3 +77,4 @@ MonoBehaviour:
   dialogImageSpriteHead: {fileID: 0}
   dialog: 
   playerInRange: 0
+  audioClip: {fileID: 8300000, guid: 13bc814f8507e2b45b3b4be1bba75fb9, type: 3}

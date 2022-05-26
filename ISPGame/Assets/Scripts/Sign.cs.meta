@@ -3,7 +3,14 @@ guid: 69993b03bcab6d94fb0f635933e9cc22
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - contextOn: {instanceID: 0}
+  - contextOff: {instanceID: 0}
+  - audioPlay: {fileID: 11400000, guid: f62fd6493ed1ddf45b897a7be900aaed, type: 2}
+  - dialogBox: {instanceID: 0}
+  - dialogText: {instanceID: 0}
+  - dialogImageSpriteHead: {instanceID: 0}
+  - mainCharScript: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

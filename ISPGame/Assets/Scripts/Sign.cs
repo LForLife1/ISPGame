@@ -9,6 +9,7 @@ public class Sign : MonoBehaviour
 
     public SignalSender contextOn;
     public SignalSender contextOff;
+    public SignalSender audioPlay;
     public GameObject dialogBox;
     public TMP_Text dialogText;
     public Sprite dialogImageSpriteHead;
@@ -18,7 +19,7 @@ public class Sign : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -29,11 +30,12 @@ public class Sign : MonoBehaviour
             if (dialogBox.activeInHierarchy)
             {
                 dialogBox.SetActive(false);
-            } else
+            }else
             {
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
-                dialogBox.transform.GetChild(2).gameObject.GetComponent<Image>().sprite = dialogImageSpriteHead; ;
+                dialogBox.transform.GetChild(2).gameObject.GetComponent<Image>().sprite = dialogImageSpriteHead;
+                audioPlay.Raise();
             }
         }
     }

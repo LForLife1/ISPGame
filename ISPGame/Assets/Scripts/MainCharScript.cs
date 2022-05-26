@@ -15,13 +15,15 @@ public class MainCharScript : MonoBehaviour
     public Quest quest;
     public VectorValue startingPositionMainRoom;
 
+    AudioSource audioSource;
+
     public void Start()
     {
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
         transform.position = startingPositionMainRoom.initialValue;
         this.transform.GetChild(0).gameObject.SetActive(false);
-        //Time.timeScale = 0.5f;
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void Update()
@@ -112,6 +114,11 @@ public class MainCharScript : MonoBehaviour
             }
         }
 
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 
 }
