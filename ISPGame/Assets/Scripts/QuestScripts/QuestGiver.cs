@@ -16,7 +16,6 @@ public class QuestGiver : MonoBehaviour
 
     public TMP_Text titleText;
     public TMP_Text descriptionText;
-    //public Text dialogRewardText;
 
     public void Start()
     {
@@ -32,7 +31,6 @@ public class QuestGiver : MonoBehaviour
         questHub.transform.Find("CompletionImage").gameObject.SetActive(false);
         titleText.text = quest.title;
         descriptionText.text = quest.description;
-        //dialogRewardText.text = quest.dialogReward;
 
         quest.isActive = true;
         mainCharacter.quest = quest;

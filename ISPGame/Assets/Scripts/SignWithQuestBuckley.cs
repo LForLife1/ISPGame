@@ -4,18 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class SignWithQuest : MonoBehaviour
+public class SignWithQuestBuckley : MonoBehaviour
 {
 
+    //Normal InteractionStuff
     public SignalSender contextOn;
     public SignalSender contextOff;
     public SignalSender audioPlay;
     public GameObject dialogBox;
     public TMP_Text dialogText;
     public Sprite dialogImageSpriteHead;
+    public bool playerInRange;
 
-    public bool givingItems;
-
+    //NormalDialogStuff
     public int numDialogToUse;
     public string dialog;
     public string dialog2;
@@ -24,17 +25,15 @@ public class SignWithQuest : MonoBehaviour
     bool questHasBeenGiven;
     public string duringQuestDialog;
     bool questCompleted;
-    bool postQuestDialogSaid;
     public string postQuestDialog;
+    bool postQuestDialogSaid;
 
-    public bool playerInRange;
-
+    //InventoryCheckStuff
     public PlayerInventory playerInventory;
     public InventoryItem itemLookingFor;
-    public InventoryItem attendanceSheet1;
-    public InventoryItem attendanceSheet2;
-    public InventoryItem attendanceSheet3;
-    public InventoryItem attendanceSheet4;
+
+    //QuestSpecificStuff
+    public QuestGiver questGiver;
 
     // Start is called before the first frame update
     void Start()
@@ -60,12 +59,10 @@ public class SignWithQuest : MonoBehaviour
             }
         }
 
-        if (questHasBeenGiven)
+        if(questHasBeenGiven && CheckItems())
         {
-            if (CheckItems())
-            {
-                //completequest
-            }
+            questCompleted = true;
+            CompleteQuestVisual();
         }
     }
 
@@ -92,30 +89,24 @@ public class SignWithQuest : MonoBehaviour
     {
         if (!questHasBeenGiven)
         {
-            //GiveTheQuest
-            //If giving item for quest, do it here
-            if (givingItems)
-            {
-                playerInventory.myInventory.Add(attendanceSheet1);
-                attendanceSheet1.numberHeld += 1;
-                playerInventory.myInventory.Add(attendanceSheet2);
-                attendanceSheet2.numberHeld += 1;
-                playerInventory.myInventory.Add(attendanceSheet3);
-                attendanceSheet3.numberHeld += 1;
-                playerInventory.myInventory.Add(attendanceSheet4);
-                attendanceSheet4.numberHeld += 1;
-            }
+            //Give the Quest
+            questGiver.OpenQuestWindow();
             questHasBeenGiven = true;
             return giveQuestDialog;
 
-        } else if(questHasBeenGiven && !questCompleted)
+        }
+        else if (questHasBeenGiven && !questCompleted)
         {
             return duringQuestDialog;
 
-        }else if (!postQuestDialogSaid)
+        }
+        else if (!postQuestDialogSaid)
         {
+            CompleteQuestDialog();
+            postQuestDialogSaid = true;
             return postQuestDialog;
-        }else
+        }
+        else
         {
             int dialogToSay = Random.Range(1, numDialogToUse + 1);
             if (dialogToSay == 1)
@@ -139,12 +130,32 @@ public class SignWithQuest : MonoBehaviour
         {
             if (playerInventory.myInventory[i].itemName.Equals("Plastic Cup"))
             {
-                if(playerInventory.myInventory[i].numberHeld == 12)
+                if (playerInventory.myInventory[i].numberHeld >= questGiver.quest.questGoal.requiredAmount)
                 {
                     return true;
                 }
             }
         }
         return false;
+    }
+
+    void CompleteQuestVisual()
+    {
+        questGiver.quest.Complete();
+        questGiver.questHub.transform.Find("CompletionImage").gameObject.SetActive(true);
+        questGiver.questCompleted = true;
+    }
+
+    void CompleteQuestDialog()
+    {
+        questGiver.roomBlocker.SetActive(false);
+        questGiver.roomTransfer.SetActive(true);
+        for (int i = 0; i < playerInventory.myInventory.Count; i++)
+        {
+            if(playerInventory.myInventory[i].itemName.Equals("Plastic Cup"))
+            {
+                playerInventory.myInventory[i].numberHeld -= questGiver.quest.questGoal.requiredAmount;
+            }
+        }
     }
 }
