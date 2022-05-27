@@ -5545,7 +5545,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Item Description - This item does a lot of really ool stuff! Let's go
-    celtics bruh bru bruh \n"
+    Celtics This Is a PlaceHolder Text STOP WASTING YOUR TIME \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6380d5375bc917f4aa2d44f8617fab3d, type: 2}
   m_sharedMaterial: {fileID: 7327278413522319121, guid: 6380d5375bc917f4aa2d44f8617fab3d, type: 2}
@@ -15069,6 +15069,88 @@ Grid:
   m_CellGap: {x: -0.008, y: -0.008, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!1 &307974624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 307974625}
+  - component: {fileID: 307974627}
+  - component: {fileID: 307974626}
+  m_Layer: 0
+  m_Name: NPC4DialogArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &307974625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307974624}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 863065804}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &307974626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307974624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69993b03bcab6d94fb0f635933e9cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextOn: {fileID: 11400000, guid: d3c624a6211a3d74ca08cf1a0f9d006a, type: 2}
+  contextOff: {fileID: 11400000, guid: f0d88201bbad3e243bd00adbe9b26b44, type: 2}
+  audioPlay: {fileID: 11400000, guid: f62fd6493ed1ddf45b897a7be900aaed, type: 2}
+  dialogBox: {fileID: 1914627926}
+  dialogText: {fileID: 1078658703}
+  dialogImageSpriteHead: {fileID: 21300000, guid: 53341a6583fd4b543b9a561ec3b70b97, type: 3}
+  numDialogToUse: 3
+  dialog: Dap me up! No? Your loss.
+  dialog2: Only here can you speak in sound effects and communicate effectively.
+  dialog3: What to english and computer science have in common? A semicolon lost
+    me four points in each of them. This was less funny than I hoped.
+  playerInRange: 0
+--- !u!61 &307974627
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307974624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.044656754, y: -0.7340965}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3945999, y: 1.6712942}
+  m_EdgeRadius: 0
 --- !u!4 &338849980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7800679137775700564, guid: 238110d6cff0b6d449ad58d1a8dd9a6a, type: 3}
@@ -16447,7 +16529,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -425.17145, y: -287.9287, z: 74.349045}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 729508399}
   m_Father: {fileID: 1487996607}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16643,6 +16726,87 @@ Transform:
   m_Father: {fileID: 1487996607}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &729508398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 729508399}
+  - component: {fileID: 729508401}
+  - component: {fileID: 729508400}
+  m_Layer: 0
+  m_Name: NPC3DialogArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &729508399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729508398}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 661045430}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &729508400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729508398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69993b03bcab6d94fb0f635933e9cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextOn: {fileID: 11400000, guid: d3c624a6211a3d74ca08cf1a0f9d006a, type: 2}
+  contextOff: {fileID: 11400000, guid: f0d88201bbad3e243bd00adbe9b26b44, type: 2}
+  audioPlay: {fileID: 11400000, guid: f62fd6493ed1ddf45b897a7be900aaed, type: 2}
+  dialogBox: {fileID: 1914627926}
+  dialogText: {fileID: 1078658703}
+  dialogImageSpriteHead: {fileID: 21300000, guid: a7d7a64188c3c22479abdb2217a9f19c, type: 3}
+  numDialogToUse: 3
+  dialog: Puer, est agricola.
+  dialog2: You are my son.
+  dialog3: Hee hee hee haw.
+  playerInRange: 0
+--- !u!61 &729508401
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729508398}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.057272553, y: -0.70097446}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3479016, y: 2.4210224}
+  m_EdgeRadius: 0
 --- !u!1 &750221278
 GameObject:
   m_ObjectHideFlags: 0
@@ -22769,7 +22933,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -401.58145, y: -300.3687, z: 74.349045}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 307974625}
   m_Father: {fileID: 1487996607}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29896,6 +30061,90 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &915584368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 915584369}
+  - component: {fileID: 915584371}
+  - component: {fileID: 915584370}
+  m_Layer: 0
+  m_Name: NPC2DialogArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &915584369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915584368}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1196628929}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &915584370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915584368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69993b03bcab6d94fb0f635933e9cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextOn: {fileID: 11400000, guid: d3c624a6211a3d74ca08cf1a0f9d006a, type: 2}
+  contextOff: {fileID: 11400000, guid: f0d88201bbad3e243bd00adbe9b26b44, type: 2}
+  audioPlay: {fileID: 11400000, guid: f62fd6493ed1ddf45b897a7be900aaed, type: 2}
+  dialogBox: {fileID: 1914627926}
+  dialogText: {fileID: 1078658703}
+  dialogImageSpriteHead: {fileID: 21300000, guid: f67e62d7855e39a428caa2e06d74ffc2, type: 3}
+  numDialogToUse: 3
+  dialog: What do you get when you combine the class president, head of debate and
+    yearbook, and focused pianist into one student? You get sad.
+  dialog2: Keep this between you and me, but if you haven't experience burnout at
+    this place, it's because you haven't tried to apply yourself.
+  dialog3: Do you have the next Jenney book? I don't want to fork over 400 dollars
+    for the next edition.
+  playerInRange: 0
+--- !u!61 &915584371
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915584368}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.057272553, y: -0.70097446}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3479016, y: 2.4210224}
+  m_EdgeRadius: 0
 --- !u!1 &940611662
 GameObject:
   m_ObjectHideFlags: 0
@@ -31774,7 +32023,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -448.52145, y: -316.02872, z: 74.349045}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 915584369}
   m_Father: {fileID: 1487996607}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43883,6 +44133,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8201218924739852796, guid: 69760779ea697fd41b8ec7f3c50f8592, type: 3}
   m_PrefabInstance: {fileID: 1680703338}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1703631219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1703631220}
+  - component: {fileID: 1703631222}
+  - component: {fileID: 1703631221}
+  m_Layer: 0
+  m_Name: NPC4DialogArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1703631220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703631219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1850450295}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1703631221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703631219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69993b03bcab6d94fb0f635933e9cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextOn: {fileID: 11400000, guid: d3c624a6211a3d74ca08cf1a0f9d006a, type: 2}
+  contextOff: {fileID: 11400000, guid: f0d88201bbad3e243bd00adbe9b26b44, type: 2}
+  audioPlay: {fileID: 11400000, guid: f62fd6493ed1ddf45b897a7be900aaed, type: 2}
+  dialogBox: {fileID: 1914627926}
+  dialogText: {fileID: 1078658703}
+  dialogImageSpriteHead: {fileID: 21300000, guid: 53341a6583fd4b543b9a561ec3b70b97, type: 3}
+  numDialogToUse: 3
+  dialog: Mr. Hopman is so valid for that bonus. Truly clutched up. I didn't need
+    it of course. He left the answers on the whiteboard.
+  dialog2: Roll Foxes doesn't even make sense. Since when do foxes roll?                                                 
+    ... probably since when they hired Kane Dining.
+  dialog3: Can you stop staring at me, you acting like a real NPC right now. I bet
+    you want to emote right now.
+  playerInRange: 0
+--- !u!61 &1703631222
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703631219}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.017357826, y: -0.29184157}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5474796, y: 1.802333}
+  m_EdgeRadius: 0
 --- !u!1 &1719327996
 GameObject:
   m_ObjectHideFlags: 0
@@ -45439,7 +45773,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -451.51144, y: -305.36, z: 74.349045}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1703631220}
   m_Father: {fileID: 1487996607}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
