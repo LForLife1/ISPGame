@@ -13,6 +13,7 @@ public class MainCharScript : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
 
     bool canMove;
+    public bool isMoving;
 
     public Quest quest;
     public VectorValue startingPositionMainRoom;
@@ -46,6 +47,7 @@ public class MainCharScript : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.RightArrow))
             {       /*Checks if shift is pressed at the same time then it moves * runSpeed instead of walkSpeed. If not it will move by walkspeed*/
+                animator.SetBool("Moving", true);
                 if (Input.GetKey(KeyCode.LeftShift))
                 {
                     transform.Translate(Vector3.right * runSpeed * Time.deltaTime);
@@ -60,6 +62,7 @@ public class MainCharScript : MonoBehaviour
             /*Leftmovement*/
             if (Input.GetKey(KeyCode.LeftArrow))
             {
+                animator.SetBool("Moving", true);
                 if (Input.GetKey(KeyCode.LeftShift))
                 {
                     transform.Translate(Vector3.left * runSpeed * Time.deltaTime);
@@ -73,6 +76,7 @@ public class MainCharScript : MonoBehaviour
             /*UpMovement*/
             if (Input.GetKey(KeyCode.UpArrow))
             {
+                animator.SetBool("Moving", true);
                 if (Input.GetKey(KeyCode.LeftShift))
                 {
                     transform.Translate(Vector3.up * runSpeed * Time.deltaTime);
@@ -87,6 +91,7 @@ public class MainCharScript : MonoBehaviour
             /*DownMovement*/
             if (Input.GetKey(KeyCode.DownArrow))
             {
+                animator.SetBool("Moving", true);
                 if (Input.GetKey(KeyCode.LeftShift))
                 {
                     transform.Translate(Vector3.down * runSpeed * Time.deltaTime);
@@ -97,10 +102,14 @@ public class MainCharScript : MonoBehaviour
                 }
 
             }
+            if(!Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow))
+            {
+                animator.SetBool("Moving", false);
+            }
         }
+
         animator.SetFloat("MoveX", lookDirection.x);
         animator.SetFloat("MoveY", lookDirection.y);
-
 
         if (Input.GetKeyDown(KeyCode.X))
         {

@@ -1,7 +1,58 @@
 fileFormatVersion: 2
 guid: d8f88a948fab4bb4dbb4e3d909802278
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6203895392629437598
+    second: MysteryGame_MainCharacterWalkCycle_0
+  - first:
+      213: 8685337548143235661
+    second: MysteryGame_MainCharacterWalkCycle_1
+  - first:
+      213: -143320942371713042
+    second: MysteryGame_MainCharacterWalkCycle_2
+  - first:
+      213: -8359850562188521932
+    second: MysteryGame_MainCharacterWalkCycle_3
+  - first:
+      213: 3226656139693437934
+    second: MysteryGame_MainCharacterWalkCycle_4
+  - first:
+      213: -1391224188421687582
+    second: MysteryGame_MainCharacterWalkCycle_5
+  - first:
+      213: 3802021550153254855
+    second: MysteryGame_MainCharacterWalkCycle_6
+  - first:
+      213: -4811915974316310555
+    second: MysteryGame_MainCharacterWalkCycle_7
+  - first:
+      213: 32689704660534382
+    second: MysteryGame_MainCharacterWalkCycle_8
+  - first:
+      213: 6221799599696710023
+    second: MysteryGame_MainCharacterWalkCycle_9
+  - first:
+      213: 3014019627900967565
+    second: MysteryGame_MainCharacterWalkCycle_10
+  - first:
+      213: -7675955806388484242
+    second: MysteryGame_MainCharacterWalkCycle_11
+  - first:
+      213: -4420032412674904507
+    second: MysteryGame_MainCharacterWalkCycle_12
+  - first:
+      213: 65268811548249564
+    second: MysteryGame_MainCharacterWalkCycle_13
+  - first:
+      213: -7322337474550841657
+    second: MysteryGame_MainCharacterWalkCycle_14
+  - first:
+      213: -5220958869507154216
+    second: MysteryGame_MainCharacterWalkCycle_15
+  - first:
+      213: -4624555186212570315
+    second: MysteryGame_MainCharacterWalkCycle_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +92,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 175
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,9 +126,378 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_0
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1599
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e943c5d6df9a81650800000000000000
+      internalID: 6203895392629437598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_1
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1579
+        width: 202
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42907fab74888870800000000000000
+      internalID: 8685337548143235661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_2
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1599
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef4f0dbc52d20ef0800000000000000
+      internalID: -143320942371713042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_3
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 1579
+        width: 202
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e4761c438dbfb80800000000000000
+      internalID: -8359850562188521932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_4
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1119
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3b2cad9a267cc20800000000000000
+      internalID: 3226656139693437934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_5
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1119
+        width: 192
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6b13eb8f061bce0800000000000000
+      internalID: -1391224188421687582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_6
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 1119
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7c345b47e73c430800000000000000
+      internalID: 3802021550153254855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_7
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1119
+        width: 192
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef39dd7ae3a83db0800000000000000
+      internalID: -4811915974316310555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_8
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 1179
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e648a1afc13247000800000000000000
+      internalID: 32689704660534382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 639
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789079b75c5485650800000000000000
+      internalID: 6221799599696710023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_10
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 639
+        width: 182
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a9713f1e2f3d920800000000000000
+      internalID: 3014019627900967565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_11
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 639
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e670e90fcd6897590800000000000000
+      internalID: -7675955806388484242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_12
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 639
+        width: 182
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54eacc260f3e8a2c0800000000000000
+      internalID: -4420032412674904507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 159
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddce3763a1e7e000800000000000000
+      internalID: 65268811548249564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_14
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 159
+        width: 192
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cebddfbcd4d16a90800000000000000
+      internalID: -7322337474550841657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_15
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 159
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ded91ce19d6b87b0800000000000000
+      internalID: -5220958869507154216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_MainCharacterWalkCycle_16
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 159
+        width: 192
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bfb916f8742dfb0800000000000000
+      internalID: -4624555186212570315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
