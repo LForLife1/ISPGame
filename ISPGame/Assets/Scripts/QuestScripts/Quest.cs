@@ -9,7 +9,6 @@ public class Quest : ScriptableObject
 
     public string title;
     public string description;
-    public string dialogReward;
 
     public QuestGoal questGoal;
 

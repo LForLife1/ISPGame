@@ -15,7 +15,6 @@ public class MainCharScript : MonoBehaviour
     bool canMove;
     public bool isMoving;
 
-    public Quest quest;
     public VectorValue startingPositionMainRoom;
 
     AudioSource audioSource;

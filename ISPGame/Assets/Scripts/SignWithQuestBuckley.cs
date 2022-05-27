@@ -89,8 +89,8 @@ public class SignWithQuestBuckley : MonoBehaviour
     {
         if (!questHasBeenGiven)
         {
-            //Give the Quest
-            questGiver.OpenQuestWindow();
+            //questGiver.OpenQuestWindow();
+            questGiver.GiveQuest();
             questHasBeenGiven = true;
             return giveQuestDialog;
 
@@ -142,7 +142,6 @@ public class SignWithQuestBuckley : MonoBehaviour
     void CompleteQuestVisual()
     {
         questGiver.quest.Complete();
-        questGiver.questHub.transform.Find("CompletionImage").gameObject.SetActive(true);
         questGiver.questCompleted = true;
     }
 

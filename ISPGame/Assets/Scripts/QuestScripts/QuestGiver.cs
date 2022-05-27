@@ -7,40 +7,32 @@ using TMPro;
 public class QuestGiver : MonoBehaviour
 {
     public Quest quest;
+    public QuestInventory questInventory;
     public bool questCompleted;
     public MainCharScript mainCharacter;
 
-    public GameObject questHub;
     public GameObject roomTransfer;
     public GameObject roomBlocker;
 
-    public TMP_Text titleText;
-    public TMP_Text descriptionText;
-
     public void Start()
     {
-        questHub.SetActive(false);
         roomBlocker.SetActive(true);
         roomTransfer.SetActive(false);
         questCompleted = false;
     }
 
-    public void OpenQuestWindow()
+    public void OnQuestComplete()
     {
-        questHub.SetActive(true);
-        questHub.transform.Find("CompletionImage").gameObject.SetActive(false);
-        titleText.text = quest.title;
-        descriptionText.text = quest.description;
-
-        quest.isActive = true;
-        mainCharacter.quest = quest;
-    }
-
-    public void OnQuestCompleteShowCheck()
-    {
-        questHub.transform.Find("CompletionImage").gameObject.SetActive(true);
-        Debug.Log("The door is unlocked");
         roomBlocker.SetActive(false);
         roomTransfer.SetActive(true);
+    }
+
+    public void GiveQuest()
+    {
+        if (questInventory && quest)
+        {
+            questInventory.myQuests.Add(quest);
+            quest.isActive = true;
+        }
     }
 }

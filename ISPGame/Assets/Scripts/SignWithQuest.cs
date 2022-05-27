@@ -36,6 +36,8 @@ public class SignWithQuest : MonoBehaviour
     public InventoryItem attendanceSheet3;
     public InventoryItem attendanceSheet4;
 
+    public QuestGiver questGiver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -93,6 +95,7 @@ public class SignWithQuest : MonoBehaviour
         if (!questHasBeenGiven)
         {
             //GiveTheQuest
+            questGiver.GiveQuest();
             //If giving item for quest, do it here
             if (givingItems)
             {

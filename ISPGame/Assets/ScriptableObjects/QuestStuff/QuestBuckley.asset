@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a1b86146f93b4b42a7b9e2534080588, type: 3}
-  m_Name: Quest1
+  m_Name: QuestBuckley
   m_EditorClassIdentifier: 
-  isActive: 1
-  title: Corporate Cleanup
-  description: Pick up all of the Cups in the Dining Room and report back to Steven.
-  dialogReward: N/A
+  isActive: 0
+  title: Cup Cleanup Crew
+  description: Pick up ten cups around the area and report back to Mr. Buckles.
   questGoal:
     goalType: 0
-    requiredAmount: 9
-    currentAmount: 2
+    requiredAmount: 10
+    currentAmount: 0
