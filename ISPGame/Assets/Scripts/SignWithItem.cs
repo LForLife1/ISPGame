@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Sign : MonoBehaviour
+public class SignWithItem : MonoBehaviour
 {
 
     public SignalSender contextOn;
@@ -20,6 +20,11 @@ public class Sign : MonoBehaviour
     public string dialog3;
     public bool playerInRange;
 
+    public PlayerInventory playerInventory;
+    public InventoryItem inventoryItem;
+
+    bool itemCollected;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,10 +39,11 @@ public class Sign : MonoBehaviour
             if (dialogBox.activeInHierarchy)
             {
                 dialogBox.SetActive(false);
-            }else
+            }
+            else
             {
                 dialogBox.SetActive(true);
-                dialogText.text = chooseRandomDialogue();
+                dialogText.text = chooseCorrectDialogue();
                 dialogBox.transform.GetChild(2).gameObject.GetComponent<Image>().sprite = dialogImageSpriteHead;
                 audioPlay.Raise();
             }
@@ -63,19 +69,26 @@ public class Sign : MonoBehaviour
         }
     }
 
-    string chooseRandomDialogue()
+    string chooseCorrectDialogue()
     {
-        int dialogToSay = Random.Range(1, numDialogToUse + 1);
-        if(dialogToSay == 1)
+        if (!itemCollected)
         {
+            itemCollected = true;
+
+            if (playerInventory.myInventory.Contains(inventoryItem))
+            {
+                inventoryItem.numberHeld++;
+            }
+            else
+            {
+                playerInventory.myInventory.Add(inventoryItem);
+                inventoryItem.numberHeld += 1;
+            }
+
             return dialog;
-        }else if(dialogToSay == 2)
+        } else
         {
             return dialog2;
-        }
-        else
-        {
-            return dialog3;
         }
     }
 }

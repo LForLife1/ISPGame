@@ -12,8 +12,12 @@ public class MainCharScript : MonoBehaviour
     Rigidbody2D rigidbody2d;
     Vector2 lookDirection = new Vector2(1, 0);
 
+    bool canMove;
+
     public Quest quest;
     public VectorValue startingPositionMainRoom;
+
+    AudioSource audioSource;
 
     public void Start()
     {
@@ -21,7 +25,8 @@ public class MainCharScript : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         transform.position = startingPositionMainRoom.initialValue;
         this.transform.GetChild(0).gameObject.SetActive(false);
-        //Time.timeScale = 0.5f;
+        audioSource = GetComponent<AudioSource>();
+        canMove = true;
     }
 
     public void Update()
@@ -37,60 +42,62 @@ public class MainCharScript : MonoBehaviour
 
 
         /*RightMovement*/
-        if (Input.GetKey(KeyCode.RightArrow))
-        {       /*Checks if shift is pressed at the same time then it moves * runSpeed instead of walkSpeed. If not it will move by walkspeed*/
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                transform.Translate(Vector3.right * runSpeed * Time.deltaTime);
-            }
-            else
-            {
-                transform.Translate(Vector3.right * walkSpeed * Time.deltaTime);
-            }
-
-        }
-
-        /*Leftmovement*/
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (canMove)
         {
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                transform.Translate(Vector3.left * runSpeed * Time.deltaTime);
+            if (Input.GetKey(KeyCode.RightArrow))
+            {       /*Checks if shift is pressed at the same time then it moves * runSpeed instead of walkSpeed. If not it will move by walkspeed*/
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    transform.Translate(Vector3.right * runSpeed * Time.deltaTime);
+                }
+                else
+                {
+                    transform.Translate(Vector3.right * walkSpeed * Time.deltaTime);
+                }
+
             }
-            else
+
+            /*Leftmovement*/
+            if (Input.GetKey(KeyCode.LeftArrow))
             {
-                transform.Translate(Vector3.left * walkSpeed * Time.deltaTime);
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    transform.Translate(Vector3.left * runSpeed * Time.deltaTime);
+                }
+                else
+                {
+                    transform.Translate(Vector3.left * walkSpeed * Time.deltaTime);
+                }
+            }
+
+            /*UpMovement*/
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    transform.Translate(Vector3.up * runSpeed * Time.deltaTime);
+                }
+                else
+                {
+                    transform.Translate(Vector3.up * walkSpeed * Time.deltaTime);
+                }
+
+            }
+
+            /*DownMovement*/
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    transform.Translate(Vector3.down * runSpeed * Time.deltaTime);
+                }
+                else
+                {
+                    transform.Translate(Vector3.down * walkSpeed * Time.deltaTime);
+                }
+
             }
         }
-
-        /*UpMovement*/
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                transform.Translate(Vector3.up * runSpeed * Time.deltaTime);
-            }
-            else
-            {
-                transform.Translate(Vector3.up * walkSpeed * Time.deltaTime);
-            }
-
-        }
-
-        /*DownMovement*/
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                transform.Translate(Vector3.down * runSpeed * Time.deltaTime);
-            }
-            else
-            {
-                transform.Translate(Vector3.down * walkSpeed * Time.deltaTime);
-            }
-
-        }
-
         animator.SetFloat("MoveX", lookDirection.x);
         animator.SetFloat("MoveY", lookDirection.y);
 
@@ -114,4 +121,13 @@ public class MainCharScript : MonoBehaviour
 
     }
 
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
+    }
+
+    public void changeMoveStatus()
+    {
+        canMove = !canMove;
+    }
 }

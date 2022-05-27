@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3107087678165789148
+--- !u!1 &8201218924739852795
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,44 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7093150561280277661}
-  - component: {fileID: 7495719423708381071}
-  - component: {fileID: 1091588750758466178}
+  - component: {fileID: 8201218924739852796}
+  - component: {fileID: 8201218924739852797}
+  - component: {fileID: 8201218924739852794}
   m_Layer: 0
-  m_Name: DialogArea
+  m_Name: InteractableObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7093150561280277661
+--- !u!4 &8201218924739852796
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3107087678165789148}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 8201218924739852795}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &7495719423708381071
+--- !u!61 &8201218924739852797
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3107087678165789148}
+  m_GameObject: {fileID: 8201218924739852795}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09064579, y: -0.70574284}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56,15 +56,15 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8258667, y: 2.4114857}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1091588750758466178
+--- !u!114 &8201218924739852794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3107087678165789148}
+  m_GameObject: {fileID: 8201218924739852795}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69993b03bcab6d94fb0f635933e9cc22, type: 3}
@@ -72,9 +72,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contextOn: {fileID: 11400000, guid: d3c624a6211a3d74ca08cf1a0f9d006a, type: 2}
   contextOff: {fileID: 11400000, guid: f0d88201bbad3e243bd00adbe9b26b44, type: 2}
+  audioPlay: {fileID: 11400000, guid: f62fd6493ed1ddf45b897a7be900aaed, type: 2}
   dialogBox: {fileID: 0}
   dialogText: {fileID: 0}
-  dialogImageSpriteHead: {fileID: 0}
-  dialog: 
+  dialogImageSpriteHead: {fileID: 21300000, guid: 245e19b3d03b8bd408242c2ba4cd01d9, type: 3}
+  numDialogToUse: 1
+  dialog: Default Object Text.
+  dialog2: 
+  dialog3: 
   playerInRange: 0
-  audioClip: {fileID: 8300000, guid: 13bc814f8507e2b45b3b4be1bba75fb9, type: 3}

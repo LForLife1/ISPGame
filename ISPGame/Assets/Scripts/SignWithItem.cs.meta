@@ -1,16 +1,17 @@
 fileFormatVersion: 2
-guid: 69993b03bcab6d94fb0f635933e9cc22
+guid: 3da6c15be55167b4f8b60ae44a34c540
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - contextOn: {instanceID: 0}
-  - contextOff: {instanceID: 0}
+  - contextOn: {fileID: 11400000, guid: d3c624a6211a3d74ca08cf1a0f9d006a, type: 2}
+  - contextOff: {fileID: 11400000, guid: f0d88201bbad3e243bd00adbe9b26b44, type: 2}
   - audioPlay: {fileID: 11400000, guid: f62fd6493ed1ddf45b897a7be900aaed, type: 2}
   - dialogBox: {instanceID: 0}
   - dialogText: {instanceID: 0}
   - dialogImageSpriteHead: {instanceID: 0}
-  - mainCharScript: {instanceID: 0}
+  - playerInventory: {fileID: 11400000, guid: e10bcb693649af74dabe18386258e7dd, type: 2}
+  - inventoryItem: {fileID: 11400000, guid: 8b15857797f338b49b2631cc87b0ad8a, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

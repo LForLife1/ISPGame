@@ -18,5 +18,5 @@ MonoBehaviour:
   dialogReward: N/A
   questGoal:
     goalType: 0
-    requiredAmount: 4
-    currentAmount: 0
+    requiredAmount: 9
+    currentAmount: 2
