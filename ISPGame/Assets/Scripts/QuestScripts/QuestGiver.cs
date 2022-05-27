@@ -11,6 +11,8 @@ public class QuestGiver : MonoBehaviour
     public MainCharScript mainCharacter;
 
     public GameObject questHub;
+    public GameObject roomTransfer;
+    public GameObject roomBlocker;
 
     public TMP_Text titleText;
     public TMP_Text descriptionText;
@@ -19,6 +21,8 @@ public class QuestGiver : MonoBehaviour
     public void Start()
     {
         questHub.SetActive(false);
+        roomBlocker.SetActive(true);
+        roomTransfer.SetActive(false);
         questCompleted = false;
     }
 
@@ -37,5 +41,8 @@ public class QuestGiver : MonoBehaviour
     public void OnQuestCompleteShowCheck()
     {
         questHub.transform.Find("CompletionImage").gameObject.SetActive(true);
+        Debug.Log("The door is unlocked");
+        roomBlocker.SetActive(false);
+        roomTransfer.SetActive(true);
     }
 }
