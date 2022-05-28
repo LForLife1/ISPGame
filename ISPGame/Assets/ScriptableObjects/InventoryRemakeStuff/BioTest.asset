@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f501c02ced8a484dbd0c3609ce4f441, type: 3}
-  m_Name: Plastic Cup
+  m_Name: BioTest
   m_EditorClassIdentifier: 
-  itemName: Plastic Cup
-  itemDescription: A plastic cup. Most likely used for a team Tea or a private party.
-  itemImage: {fileID: 21300000, guid: cf91816336be7be4cb6949b45fe23d66, type: 3}
-  numberHeld: 4
+  itemName: Biology Test
+  itemDescription: Your last biology test on molecular bonds. You scored a sixty.
+    Should have studied more and gamed less.
+  itemImage: {fileID: 21300000, guid: 2b516263339dec4459885cb0d1de2d4d, type: 3}
+  numberHeld: 0
   usable: 0
   unique: 0
   thisEvent:

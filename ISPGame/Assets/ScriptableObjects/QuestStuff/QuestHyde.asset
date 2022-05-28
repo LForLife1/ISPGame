@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: QuestHyde
   m_EditorClassIdentifier: 
   isActive: 0
-  title: Test Tube Trackdown
-  description: Find all five of the doctor's test tubes and report back to him.
+  title: T-Tube Trackdown
+  description: Find all five test tubes and report back to him.
   questGoal:
     goalType: 0
     requiredAmount: 5

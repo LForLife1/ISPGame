@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f501c02ced8a484dbd0c3609ce4f441, type: 3}
-  m_Name: Plastic Cup
+  m_Name: Test Tube
   m_EditorClassIdentifier: 
-  itemName: Plastic Cup
-  itemDescription: A plastic cup. Most likely used for a team Tea or a private party.
-  itemImage: {fileID: 21300000, guid: cf91816336be7be4cb6949b45fe23d66, type: 3}
-  numberHeld: 4
+  itemName: Test Tube
+  itemDescription: A glass test tube. For some reason, you have a strong inclination
+    to drop it on the floor.
+  itemImage: {fileID: 21300000, guid: 5ab4f01a4cf736f45b868b9079370d58, type: 3}
+  numberHeld: 0
   usable: 0
   unique: 0
   thisEvent:
