@@ -16586,7 +16586,8 @@ MonoBehaviour:
     them back. I'll return your last test to you, how about that?
   duringQuestDialog: Get me my stuff! There should be 5 test tubes and that gas mask.
     Who wouldv'e taken it?
-  postQuestDialog: No more moonshine Mr. Buckles. Thanks kid, here's your test back.
+  postQuestDialog: My beautiful gas mask! Moonshine making is for me and only me!
+    Erhmm, thanks kid, here's your test back.
   playerInventory: {fileID: 11400000, guid: e10bcb693649af74dabe18386258e7dd, type: 2}
   itemLookingFor: {fileID: 11400000, guid: b1f75822c4aa7bb439f81da349877487, type: 2}
   itemLookingFor2: {fileID: 11400000, guid: b413aeb9a3fa5ea418c50b4de43ab285, type: 2}
