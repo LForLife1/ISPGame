@@ -45828,7 +45828,7 @@ MonoBehaviour:
     ... probably since when they hired Kane Dining.
   dialog3: Can you stop staring at me, you acting like a real NPC right now. I bet
     you want to emote right now.
-  questDialog: You are evil.
+  questDialog: Work squad slip? You are evil.
   playerInRange: 0
   inventoryManager: {fileID: 1855876312}
 --- !u!61 &1703631222
@@ -49515,8 +49515,8 @@ MonoBehaviour:
   numDialogToUse: 2
   dialog: There's some sort of apparatus set up on the desk. I'll take the test tube,
     but the rest looks to dangerous to touch.
-  dialog2: "I've always thought the rancid smell up here was a vaping session gone
-    wrong, but there might be something much more sinister at play\u2026"
+  dialog2: I've always thought the rancid smell up here was a vaping session gone
+    wrong, but there might be something much more sinister at play...
   dialog3: 
   playerInRange: 0
   playerInventory: {fileID: 11400000, guid: e10bcb693649af74dabe18386258e7dd, type: 2}
