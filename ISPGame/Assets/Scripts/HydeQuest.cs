@@ -140,13 +140,11 @@ public class HydeQuest : MonoBehaviour
                 }
             }
 
-            if (playerInventory.myInventory[i].itemName.Equals("Gas Mask"))
+            if (playerInventory.myInventory[i].itemName.Equals("Missing Gas Mask") && playerInventory.myInventory[i].numberHeld == 1)
             {
-                if (playerInventory.myInventory[i].numberHeld >= questGiver.quest.questGoal.requiredAmount)
-                {
-                    part2 = true;
-                }
+                part2 = true;
             }
+               
         }
         return (part1 && part2);
     }
@@ -167,6 +165,11 @@ public class HydeQuest : MonoBehaviour
             if (playerInventory.myInventory[i].itemName.Equals("Test Tube"))
             {
                 playerInventory.myInventory[i].numberHeld -= questGiver.quest.questGoal.requiredAmount;
+            }
+
+            if (playerInventory.myInventory[i].itemName.Equals("Missing Gas Mask"))
+            {
+                playerInventory.myInventory[i].numberHeld --;
             }
         }
     }

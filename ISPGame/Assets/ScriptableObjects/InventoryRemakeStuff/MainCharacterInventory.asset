@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: MainCharacterInventory
   m_EditorClassIdentifier: 
   myInventory:
-  - {fileID: 11400000, guid: 98f5d2d3cc3272d42a014397c707acbd, type: 2}
+  - {fileID: 11400000, guid: b1f75822c4aa7bb439f81da349877487, type: 2}
+  - {fileID: 11400000, guid: 6faf2733601fe0444a1d4f04daed1395, type: 2}
   - {fileID: 11400000, guid: 77436641f0925cc499c28ee78b55d417, type: 2}
+  - {fileID: 11400000, guid: ebb28099a7a098846a6695493db83841, type: 2}
+  - {fileID: 11400000, guid: 729f21229f610074b90ac1c63a3124ed, type: 2}
+  - {fileID: 11400000, guid: 98f5d2d3cc3272d42a014397c707acbd, type: 2}
+  - {fileID: 11400000, guid: 7802e0839061ad241be48cff26142837, type: 2}
+  - {fileID: 11400000, guid: e7e5670f710283040a5bd01cf04eb19f, type: 2}

@@ -15,6 +15,5 @@ public class Quest : ScriptableObject
     public void Complete()
     {
         isActive = false;
-        Debug.Log(title + " was completed!");
     }
 }
