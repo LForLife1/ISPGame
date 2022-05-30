@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f501c02ced8a484dbd0c3609ce4f441, type: 3}
-  m_Name: Attendance Sheet 1221
+  m_Name: PresidentialMedal
   m_EditorClassIdentifier: 
-  itemName: Attendance Sheet
-  itemDescription: Everyone except Austin, Alex, Liam, John, and Steven was present
-    on December 18. Luke arrived late.
-  itemImage: {fileID: 21300000, guid: 2b516263339dec4459885cb0d1de2d4d, type: 3}
-  numberHeld: 0
+  itemName: Presidential Medal of Freedom
+  itemDescription: The highest recognition of merit a citizen can receive - reserved
+    only for the best and brightest. How the hell did you get this?
+  itemImage: {fileID: 21300000, guid: 48ab064c983d7cf4fa5547acef03a4be, type: 3}
+  numberHeld: 1
   usable: 0
-  unique: 1
+  unique: 0
   thisEvent:
     m_PersistentCalls:
       m_Calls: []

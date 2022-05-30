@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1b86146f93b4b42a7b9e2534080588, type: 3}
   m_Name: QuestBettendorf
   m_EditorClassIdentifier: 
-  isActive: 0
-  title: Ruffian Roundup
-  description: Talk to all the troublemakers with two or more lates.
+  isActive: 1
+  title: Long Arm of the Law
+  description: Give out all the work squad slips students and report back to Mr.
+    Bettencourt.
   questGoal:
     goalType: 1
     requiredAmount: 3

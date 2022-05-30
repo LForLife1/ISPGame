@@ -31,6 +31,7 @@ public class HydeQuest : MonoBehaviour
     //InventoryCheckStuff
     public PlayerInventory playerInventory;
     public InventoryItem itemLookingFor;
+    public InventoryItem itemLookingFor2;
     public InventoryItem itemToGive;
 
     //QuestSpecificStuff
@@ -126,17 +127,28 @@ public class HydeQuest : MonoBehaviour
 
     bool CheckItems()
     {
+        bool part1 = false;
+        bool part2 = false;
+
         for (int i = 0; i < playerInventory.myInventory.Count; i++)
         {
             if (playerInventory.myInventory[i].itemName.Equals("Test Tube"))
             {
                 if (playerInventory.myInventory[i].numberHeld >= questGiver.quest.questGoal.requiredAmount)
                 {
-                    return true;
+                    part1 = true;
+                }
+            }
+
+            if (playerInventory.myInventory[i].itemName.Equals("Gas Mask"))
+            {
+                if (playerInventory.myInventory[i].numberHeld >= questGiver.quest.questGoal.requiredAmount)
+                {
+                    part2 = true;
                 }
             }
         }
-        return false;
+        return (part1 && part2);
     }
 
     void CompleteQuestVisual()

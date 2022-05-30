@@ -23,7 +23,6 @@ public class Sign : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -34,10 +33,11 @@ public class Sign : MonoBehaviour
             if (dialogBox.activeInHierarchy)
             {
                 dialogBox.SetActive(false);
-            }else
+            }
+            else
             {
                 dialogBox.SetActive(true);
-                dialogText.text = chooseRandomDialogue();
+                dialogText.text = chooseCorrectDialogue();
                 dialogBox.transform.GetChild(2).gameObject.GetComponent<Image>().sprite = dialogImageSpriteHead;
                 audioPlay.Raise();
             }
@@ -63,13 +63,14 @@ public class Sign : MonoBehaviour
         }
     }
 
-    string chooseRandomDialogue()
+    string chooseCorrectDialogue()
     {
         int dialogToSay = Random.Range(1, numDialogToUse + 1);
-        if(dialogToSay == 1)
+        if (dialogToSay == 1)
         {
             return dialog;
-        }else if(dialogToSay == 2)
+        }
+        else if (dialogToSay == 2)
         {
             return dialog2;
         }

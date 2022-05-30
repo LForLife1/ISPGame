@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f501c02ced8a484dbd0c3609ce4f441, type: 3}
-  m_Name: Plastic Cup
+  m_Name: WorkSquadSlip
   m_EditorClassIdentifier: 
-  itemName: Plastic Cup
-  itemDescription: A plastic cup. Most likely used for a team Tea or a private party.
-  itemImage: {fileID: 21300000, guid: cf91816336be7be4cb6949b45fe23d66, type: 3}
-  numberHeld: 4
+  itemName: WorkSquadSlip
+  itemDescription: These forms are to a teacher what the axe is to the executioner.
+    The unassuming brown papers strike fear in the hearts of many a student here
+  itemImage: {fileID: 21300000, guid: 62db57f883837e444b74323c8b128e5c, type: 3}
+  numberHeld: 0
   usable: 0
-  unique: 0
+  unique: 1
   thisEvent:
     m_PersistentCalls:
       m_Calls: []

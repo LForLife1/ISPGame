@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class SignWithQuest : MonoBehaviour
+public class NPCSign : MonoBehaviour
 {
 
     public SignalSender contextOn;
@@ -14,35 +14,22 @@ public class SignWithQuest : MonoBehaviour
     public TMP_Text dialogText;
     public Sprite dialogImageSpriteHead;
 
-    public bool givingItems;
-
     public int numDialogToUse;
     public string dialog;
     public string dialog2;
     public string dialog3;
-    public string giveQuestDialog;
-    bool questHasBeenGiven;
-    public string duringQuestDialog;
-    bool questCompleted;
-    public bool postQuestDialogSaid;
-    public string postQuestDialog;
-
+    [SerializeField] string questDialog;
+    public static bool bettenQuestActive;
     public bool playerInRange;
 
-    public PlayerInventory playerInventory;
-    public InventoryItem itemCheckingFor;
-    public InventoryItem rewardItem;
-
-    public InventoryItem workSquadSlips;
-
-    public QuestGiver questGiver;
-    public SignalSender bettenQuestSenderT;
-    public SignalSender bettenQuestSenderF;
+    bool takenItem;
+    public InventoryManager inventoryManager;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        bettenQuestActive = false;
+        takenItem = false;
     }
 
     // Update is called once per frame
@@ -61,12 +48,6 @@ public class SignWithQuest : MonoBehaviour
                 dialogBox.transform.GetChild(2).gameObject.GetComponent<Image>().sprite = dialogImageSpriteHead;
                 audioPlay.Raise();
             }
-        }
-
-        if (questHasBeenGiven && CheckItems())
-        {
-            questCompleted = true;
-            CompleteQuestVisual();
         }
     }
 
@@ -91,32 +72,22 @@ public class SignWithQuest : MonoBehaviour
 
     string chooseCorrectDialogue()
     {
-        if (!questHasBeenGiven)
+        if (bettenQuestActive)
         {
-            //GiveTheQuest
-            questGiver.GiveQuest();
-            bettenQuestSenderT.Raise();
-            //If giving item for quest, do it here
-            if (givingItems)
+            if (!takenItem)
             {
-                playerInventory.myInventory.Add(workSquadSlips);
-                workSquadSlips.numberHeld += 4;
-            }
-            questHasBeenGiven = true;
-            return giveQuestDialog;
-
-        } else if(questHasBeenGiven && !questCompleted)
-        {
-            return duringQuestDialog;
-
-        }else if (!postQuestDialogSaid)
-        {
-            CompleteQuestDialog();
-            bettenQuestSenderF.Raise();
-            postQuestDialogSaid = true;
-            return postQuestDialog;
-
-        }else
+                for (int i = 0; i < inventoryManager.playerInventory.myInventory.Count; i++)
+                {
+                    if (inventoryManager.playerInventory.myInventory[i].itemName.Equals("WorkSquadSlip"))
+                    {
+                        inventoryManager.playerInventory.myInventory[i].numberHeld -= 1;
+                    }
+                }
+                takenItem = true;
+            }         
+            return questDialog;
+        }
+        else
         {
             int dialogToSay = Random.Range(1, numDialogToUse + 1);
             if (dialogToSay == 1)
@@ -134,24 +105,14 @@ public class SignWithQuest : MonoBehaviour
         }
     }
 
-    bool CheckItems()
+    public void changeBettenQuestStatusTrue()
     {
-        if (itemCheckingFor.numberHeld == 0)
-        {
-            return true;
-        }
-        return false;
+        bettenQuestActive = true;
     }
 
-    void CompleteQuestVisual()
+    public void changeBettenQuestStatusFalse()
     {
-        questGiver.quest.Complete();
-        questGiver.questCompleted = true;
+        bettenQuestActive = false;
     }
 
-    void CompleteQuestDialog()
-    {
-        playerInventory.myInventory.Add(rewardItem);
-        rewardItem.numberHeld ++;
-    }
 }

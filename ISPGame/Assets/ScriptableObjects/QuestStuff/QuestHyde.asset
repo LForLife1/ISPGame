@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   title: T-Tube Trackdown
-  description: Find all five test tubes and report back to him.
+  description: Find the missing gas mask and test tubes and report back to Dr. Hydrangea
   questGoal:
     goalType: 0
     requiredAmount: 5

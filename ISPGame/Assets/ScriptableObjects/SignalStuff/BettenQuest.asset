@@ -9,13 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a1b86146f93b4b42a7b9e2534080588, type: 3}
-  m_Name: QuestBuckley
+  m_Script: {fileID: 11500000, guid: cc869573f56b5f8469e74361ad59c46f, type: 3}
+  m_Name: BettenQuest
   m_EditorClassIdentifier: 
-  isActive: 1
-  title: Glue Done It
-  description: "Collect Mr. Buckles\u2019 ten missing glue sticks and report back."
-  questGoal:
-    goalType: 0
-    requiredAmount: 10
-    currentAmount: 0
+  listeners: []

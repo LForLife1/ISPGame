@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f501c02ced8a484dbd0c3609ce4f441, type: 3}
-  m_Name: Attendance Sheet 1220
+  m_Name: GasMask
   m_EditorClassIdentifier: 
-  itemName: Attendance Sheet
-  itemDescription: Everyone was present on December 20. Austin and Luke arrived late.
-  itemImage: {fileID: 21300000, guid: 2b516263339dec4459885cb0d1de2d4d, type: 3}
+  itemName: Missing Gas Mask
+  itemDescription: A gas mask secretly taken from Dr. Hydrangea. Wasn't this the
+    premise of some famous TV show?
+  itemImage: {fileID: 21300000, guid: 30dd446bf18965a4bbac0c1bd26e5a1c, type: 3}
   numberHeld: 0
   usable: 0
-  unique: 1
+  unique: 0
   thisEvent:
     m_PersistentCalls:
       m_Calls: []

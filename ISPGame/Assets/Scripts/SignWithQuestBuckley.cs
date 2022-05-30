@@ -30,6 +30,7 @@ public class SignWithQuestBuckley : MonoBehaviour
 
     //InventoryCheckStuff
     public PlayerInventory playerInventory;
+    public InventoryItem rewardItem;
     public InventoryItem itemLookingFor;
 
     //QuestSpecificStuff
@@ -128,7 +129,7 @@ public class SignWithQuestBuckley : MonoBehaviour
     {
         for (int i = 0; i < playerInventory.myInventory.Count; i++)
         {
-            if (playerInventory.myInventory[i].itemName.Equals("Plastic Cup"))
+            if (playerInventory.myInventory[i].itemName.Equals("Missing Glue Stick"))
             {
                 if (playerInventory.myInventory[i].numberHeld >= questGiver.quest.questGoal.requiredAmount)
                 {
@@ -149,9 +150,13 @@ public class SignWithQuestBuckley : MonoBehaviour
     {
         questGiver.roomBlocker.SetActive(false);
         questGiver.roomTransfer.SetActive(true);
+
+        playerInventory.myInventory.Add(rewardItem);
+        rewardItem.numberHeld++;
+
         for (int i = 0; i < playerInventory.myInventory.Count; i++)
         {
-            if(playerInventory.myInventory[i].itemName.Equals("Plastic Cup"))
+            if(playerInventory.myInventory[i].itemName.Equals("Missing Glue Stick"))
             {
                 playerInventory.myInventory[i].numberHeld -= questGiver.quest.questGoal.requiredAmount;
             }

@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Test Tube
   itemDescription: A glass test tube. For some reason, you have a strong inclination
     to drop it on the floor.
-  itemImage: {fileID: 21300000, guid: 5ab4f01a4cf736f45b868b9079370d58, type: 3}
+  itemImage: {fileID: 21300000, guid: 1095c0c1cad31374c9e8deb6173ca522, type: 3}
   numberHeld: 0
   usable: 0
   unique: 0
