@@ -140,7 +140,7 @@ public class HydeQuest : MonoBehaviour
                 }
             }
 
-            if (playerInventory.myInventory[i].itemName.Equals("Missing Gas Mask") && playerInventory.myInventory[i].numberHeld == 1)
+            if (playerInventory.myInventory[i].itemName.Equals("Missing Gas Mask") && playerInventory.myInventory[i].numberHeld > 0)
             {
                 part2 = true;
             }
