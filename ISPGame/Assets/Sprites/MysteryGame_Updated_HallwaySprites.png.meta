@@ -1,0 +1,480 @@
+fileFormatVersion: 2
+guid: 5b887d24e43f1e14ca289269b890836d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5928309085973310160
+    second: MysteryGame_Updated_HallwaySprites_0
+  - first:
+      213: 2054767341426768069
+    second: MysteryGame_Updated_HallwaySprites_1
+  - first:
+      213: 349665271592041438
+    second: MysteryGame_Updated_HallwaySprites_2
+  - first:
+      213: 4674461596790360332
+    second: MysteryGame_Updated_HallwaySprites_3
+  - first:
+      213: 6833586136687978028
+    second: MysteryGame_Updated_HallwaySprites_4
+  - first:
+      213: 5921823579114125115
+    second: MysteryGame_Updated_HallwaySprites_5
+  - first:
+      213: 1545306072727832610
+    second: MysteryGame_Updated_HallwaySprites_6
+  - first:
+      213: -2666658616974841283
+    second: MysteryGame_Updated_HallwaySprites_7
+  - first:
+      213: -8102942619201424551
+    second: MysteryGame_Updated_HallwaySprites_8
+  - first:
+      213: 657338772254990850
+    second: MysteryGame_Updated_HallwaySprites_9
+  - first:
+      213: 7806064028140712132
+    second: MysteryGame_Updated_HallwaySprites_10
+  - first:
+      213: -2626240728528534123
+    second: MysteryGame_Updated_HallwaySprites_11
+  - first:
+      213: -459583098072727225
+    second: MysteryGame_Updated_HallwaySprites_12
+  - first:
+      213: -5389380748584953647
+    second: MysteryGame_Updated_HallwaySprites_13
+  - first:
+      213: 2563511920991907307
+    second: MysteryGame_Updated_HallwaySprites_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 175
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_0
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1738
+        width: 193
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dae82444b5954250800000000000000
+      internalID: 5928309085973310160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_1
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1768
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8f0d9a200048c10800000000000000
+      internalID: 2054767341426768069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_2
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1438
+        width: 323
+        height: 604
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbb88f36b24ad400800000000000000
+      internalID: 349665271592041438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_3
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 1599
+        width: 644
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0905e05e060fd040800000000000000
+      internalID: 4674461596790360332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_4
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 1279
+        width: 644
+        height: 783
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26225ba266c5de50800000000000000
+      internalID: 6833586136687978028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_5
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1438
+        width: 324
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3731a78b2b8e2250800000000000000
+      internalID: 5921823579114125115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_6
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 798
+        width: 484
+        height: 413
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228423e8fa7027510800000000000000
+      internalID: 1545306072727832610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_7
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 638
+        width: 482
+        height: 644
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3aeafdcd102efad0800000000000000
+      internalID: -2666658616974841283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_8
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 638
+        width: 484
+        height: 644
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953302b7e909c8f80800000000000000
+      internalID: -8102942619201424551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_9
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202a95171265f1900800000000000000
+      internalID: 657338772254990850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_10
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 159
+        width: 482
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0384310e5b45c60800000000000000
+      internalID: 7806064028140712132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_11
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 159
+        width: 804
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595c469c8f7bd8bd0800000000000000
+      internalID: -2626240728528534123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_12
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 159
+        width: 482
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7410a967b9b3f99f0800000000000000
+      internalID: -459583098072727225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_13
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8d34963c21535b0800000000000000
+      internalID: -5389380748584953647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteryGame_Updated_HallwaySprites_14
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 959
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beda334928c639320800000000000000
+      internalID: 2563511920991907307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
